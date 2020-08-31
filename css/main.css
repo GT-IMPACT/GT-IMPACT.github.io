@@ -125,6 +125,12 @@ h6 {
   margin-top: 0;
   font-weight: 600; }
 
+.p-size{
+  font-family: "Play", sans-serif;
+  color: #000;
+  font-size: 1.5em;
+}
+
 .p-black{
     font-family: "Play", sans-serif;
   color: #000;
@@ -2078,11 +2084,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.main-menu {
-  padding-top: 24px; }
+
 
 #header {
-  padding: 0px 0px 27px 0px;
+  padding: 0px 0px 20px 0px;
   position: relative;
   left: 0;
   top: 0;
@@ -2090,10 +2095,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   background: #fff;
-  margin-bottom: 31px; }
-  @media (max-width: 1665px) {
-    #header {
-      margin-bottom: 0px; } }
+  margin-top: 10px; }
 
 #header.header-scrolled {
   position: relative;
@@ -2104,11 +2106,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #242429; }
 
 #logo {
+  margin-top: 11px;
   margin-left: 15px;
   scale: 10%; }
-  @media (max-width: 673px) {
-    #logo {
-      margin-left: 20px; } }
 
 #header #logo h1 {
   font-size: 34px;
@@ -2127,10 +2127,6 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0; }
-
-@media (max-width: 768px) {
-  #header #logo h1 {
-    font-size: 28px; }
 
   #header #logo img {
     max-height: 40px; } }
@@ -2157,6 +2153,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap; }
 
 .nav-menu > li {
+  margin-top: 12px;
   float: left; }
 
 .nav-menu li:hover > ul,
@@ -2190,6 +2187,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Meu Container */
 #nav-menu-container {
   margin: 0;
+  margin-right: auto;
   margin-left: auto; }
 
 .nav-menu a {
@@ -2237,110 +2235,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul ul {
   margin: 0; }
-
-/* Mobile Nav Toggle */
-#mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  z-index: 999;
-  top: 60px;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  display: none;
-  transition: all 0.4s;
-  outline: none;
-  cursor: pointer; }
-  @media (max-width: 800px) {
-    #mobile-nav-toggle {
-      top: 26px; } }
-
-#mobile-nav-toggle i {
-  color: #17417f;
-  font-weight: 900; }
-
-@media (max-width: 800px) {
-  #mobile-nav-toggle {
-    display: inline; }
-
-  #nav-menu-container {
-    display: none; } }
-/* Mobile Nav Styling */
-#mobile-nav {
-  position: fixed;
-  top: 0;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: rgba(0, 0, 0, 0.8);
-  left: -260px;
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s; }
-
-#mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-
-#mobile-nav ul li {
-  position: relative; }
-
-#mobile-nav ul li a {
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  overflow: hidden;
-  padding: 10px 22px 10px 15px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  outline: none;
-  font-weight: 400; }
-
-#mobile-nav ul li a:hover {
-  color: #fff; }
-
-#mobile-nav ul li li {
-  padding-left: 30px; }
-
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff; }
-
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #17417f; }
-
-#mobile-nav ul .menu-has-children li a {
-  text-transform: none; }
-
-#mobile-nav ul .menu-item-active {
-  color: #17417f; }
-
-#mobile-body-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  display: none; }
-
-/* Mobile Nav body classes */
-body.mobile-nav-active {
-  overflow: hidden; }
-
-body.mobile-nav-active #mobile-nav {
-  left: 0; }
-
-body.mobile-nav-active #mobile-nav-toggle {
-  color: #fff; }
 
 .home-banner-area {
   position: relative; }
@@ -3636,5 +3530,153 @@ body.mobile-nav-active #mobile-nav-toggle {
  width: 100%;
 }
 
+[data-tooltip] {
+    position: relative;
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 120px;
+    left: 0; top: 0;
+    background: #17417f;
+    color: #fff;
+    padding: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s;
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1;
+    top: 2em;
+   }
 
-/*# sourceMappingURL=main.css.map */
+   /**********popup links**********/
+.link_group {
+margin:20px auto;
+width:555px;
+text-align:center;
+}
+.link_group a {
+margin:0 20px;
+padding:5px 15px;
+color:#000;
+font-weight:bold;
+display:inline-block;
+vertical-align:top;
+*display:inline;
+*zoom:1;
+position:relative;
+text-decoration:none;
+text-transform:uppercase;
+border:1px solid #ccc;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+behavior: url(PIE.htc);
+}
+.link_group a:hover {
+color:#cc0000;
+}
+
+/**********All styles popup**********/
+.popup {
+padding:5px 15px 15px;
+position:fixed;
+top:100px;
+left:50%;
+display:none;
+overflow:hidden;
+border:1px solid #ccc;
+background:#fff;
+z-index:100;
+behavior: url(PIE.htc);
+}
+.popup a.close {
+width:16px;
+height:16px;
+display:block;
+text-indent:-9999px;
+position:absolute;
+top:10px;
+right:10px;
+background:url(../img/close.png) no-repeat;
+}
+
+/**********popup with tabs**********/
+.tabs_info {
+margin-left:-40%;
+width:80%;
+}
+/*tabs links*/
+.selectTabs {
+margin:10px 0 0;
+width:100%;
+}
+.lineTabs {
+width:100%;
+float:left;
+list-style:none;
+}
+
+
+.lineTabs a {
+padding:4px 15px;
+display:block;
+text-decoration:none;
+color:#000;
+font-weight:bold;
+font-size:10px;
+text-transform:uppercase;
+}
+/*tabs content*/
+.tab_content {
+width:100%;
+float:left;
+position:relative;
+behavior: url(PIE.htc);
+}
+.tab_content div{
+display:none;
+}
+.tab_content p {
+margin-left: 20px;
+
+}
+.tab_content .tab1 {
+display:block;
+}
+.tab_content .tab1, .tab_content .tab2 {
+padding:10px 5px;
+}
+.tab_content img {
+margin:0 10px 5px 0;
+float:left;
+}
+
+/**********overlay styles**********/
+#overlay {
+width:100%;
+height:100%;
+position:fixed;
+top:0;
+left:0;
+display:none;
+background:#000;
+opacity:.8;
+}
+
+.scrollbox {
+ overflow: auto;
+ top: 5%;
+ max-height: 90%;
+ background-attachment: local, local, scroll, scroll;
+}
+
+.cl {
+  font-family: "Play", sans-serif;
+  color: #000;
+  font-weight:bold;
+  padding-top: 20px;
+  font-size: 1.5em;
+}

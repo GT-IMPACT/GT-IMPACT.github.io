@@ -20,12 +20,11 @@
     <title>Impact - Скачать</title>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Oswald:300,500,600|Roboto:400,700"
+      href="https://fonts.googleapis.com/css?family=Play:300,400,500,600,700"
       rel="stylesheet"
     />
-    <!--
-			CSS
-			============================================= -->
+    <!--CSS============================================= -->
+	
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -35,39 +34,109 @@
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-
   <body>
-  		<!-- Start Preloader Area -->
-	<div class="preloader-area">
-		<div class="loader-box">
-			<div class="loader"></div>
-		</div>
-	</div>
-	<!-- End Preloader Area -->
+
 	<!-- Start Header Area -->
 	<header id="header">
-		
+		<div class="popup tabs_info scrollbox">
+		<a class="close" href="#">Close</a>
+		<h2 style="font-weight:bold; font-size: 4em; color: #000; text-align: center;" >Список изменений</h2>		
+		<div class="selectTabs">
+			<div class="tab_content" style="font-size: 1.2em; color: #000;">
+				<p class="p-size" style="font-weight:bold; font-size: 2.6em; text-align: center; margin-left: -2px;">IMPACT 1.0 Release Candidate</p>
+				<p class="p-black" style="font-weight:bold; font-size: 2.2em; padding-top: 30px;">MODS:</p>
+				<p>
+					
+					<p class="cl">Forestry</p>
+					
+					     - Увеличены слоты в сумках (тир-1 - 45, ир-2 - 63)
+					
+					</br><p class="cl">AE Stuff</p>
+					
+					     - Изменена механика безпроводных передатчиков
+					</br>- При наведении на беспроводной передатчик показывает общее потребление для пары в EU/t
+					
+					</br><p class="cl">Chest UP</p>
+					
+					     -Изменено отображение тултипов
+					
+					</br><p class="cl">Waila Plugins</p>
+					
+					     - Изменено отображение информации для мультиблоков GregTech
+					</br>- Добавлено отображение информации для мультиблоков Impact
+					</br>- Добавлено отображение информации для одноблочных механизмов
+					</br>- Добавлено отображение для одноблочных Battery Buffer
+					</br>- Добавлено отображение для Lapatronic Capacity Storage
+					
+					<p class="cl">GregTech</p>
+
+						 - Добавлена функция переключения для Programmer Circuit (ПКМ + Шифт: -1, ПКМ: +1)
+					</br>- Исправлены рецепты предметов, которые потом не стакаются
+					</br>- Исправлен баг с гуи бассов
+					</br>- Добавлен сепаратор(разделение, пример: 10000, теперь отображается как: 10,000)
+					</br>- Подправлен рудоген
+					</br>- Исправлены некоторые материалы и их переработка
+					</br>- Исправлены крафты с пластинами из Обсидиана
+					</br>- Добавлен новый Шейп для экструдера (Shaft)
+					</br>- Добавлена жидкость Herbicide для крафта Weed-ex
+					</br>- Возвращены крафты одноблоков: Scanner, Heater
+					</br>- Переименованы роторы для турбин
+					</br>- Добавлена руда Плутония241
+					</br>- Исправлена химическая ветка в эндгейме
+					</br>- Добавлены новые нагревательные кольца
+					</br>- Добавлена функция в Energy detector cover для Lapatronic Capacity Storage
+					</br>- Удалены рецепты дерева в дробителе
+					</br>- Исправлен баг с паровой капсулой, теперь набирается в любом танке
+					</br>- Исправлены рецепты Fusion coil T2
+					
+					</br><p class="cl">Impact Core</p>
+
+					     - Исправлен баг с Concrete (нагружал мир)
+					</br>- Исправлены все блоки из мода (не крафтились)
+					</br>- Интегрирован Плагин для руды
+					</br>- Исправлена Wood Form
+					</br>- Добавлен сепаратор для бассов многоблоков (все басы общие / каждый бас по раздельности) переключается Шифт+Отвертка по контролеру
+					</br>- Исправлен баг с параллельностью
+					</br>- Удален режим многоблоков из гуи (ломал механизмы)
+					</br>- Большое количество исправленных рецептов + перенос скриптов в код
+					
+					</br><p class="cl">NEI Ore Plugin</p>
+					
+						 - Удален (перенесен в Impact Core)
+					
+					</br><p class="p-black" style="font-weight:bold; font-size: 2.2em; padding-top: 30px;">CONFIGS:</p>
+
+						 - Обнулены некоторые конфиги
+					</br>- Подправлены конфиги GregTech
+					</br><p class="p-black" style="font-weight:bold; font-size: 2.2em; padding-top: 30px;">SCRIPTS:</p>
+					
+						 - Удалены ненужные скрипты (продолжается перенос рецептов в код)
+				</p>
+			</div>
+		</div>			
+	</div>
+		<div class="header-inner">
 		<div class="container main-menu">
 			<div class="row align-items-center d-flex">
 				<div id="logo">
-					<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+					<a href="index"><img src="img/logo.png" alt="" title="" /></a>
 				</div>
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
-						<li class=""><a href="index.html">Главная</a></li>
-						<li><a class="" href="about.html">О модпаке</a></li>
-						<li><a class="active" href="download.html">Скачать</a></li>
-						<li class="menu-has-children"><a href="#">Wiki</a>
+						<li class=""><a href="index">Главная</a></li>
+						<li><a class="" href="about">О модпаке</a></li>
+						<li><a class="active" href="download">Скачать</a></li>
+						<li class="menu-has-children"><a href="">Wiki</a>
 							<ul>
-								<li><a>GregTech и аддоны (скоро) </a></li>
-								<li><a>Другие моды (скоро) </a></li>
+								<li><a data-tooltip="В разработке">GregTech и аддоны</a></li>
+								<li><a data-tooltip="В разработке">Другие моды</a></li>
 							</ul>
-						<li></li>
-						<li></li>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
+	</div>
 	</header>
 	<!-- End Header Area -->
 
@@ -77,7 +146,7 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">Скачать IMPACT</h1>
-            <p>Последняя версия: 1.0RC</p>
+            <p>Актуальная версия: 1.0-RC</p>
           </div>
         </div>
       </div>
@@ -93,18 +162,22 @@
 						<h2 class="text-center"><p class="p-black">Клиент | Сервер</p></h2>
 					</div>
 					<div class="text-center" class="mb-35 wow fadeIn" data-wow-duration=".8s" data-wow-delay=".3s">
-						<p>
-							Выберите что скачать, клиент или сервер.
-						</p>
-					</div>
+						<p>Скачать актуальную версию</p>
+						<div class="">
+						<p style="color: #000; font-weight:bold;">Перед скачиванием прочтите <a class="show_popup" rel="tabs_info" href="#">список изменений</a></p>
+						</div>
 					<div class="align-items-center justify-content-center text-center">
-					<a href="#" class="primary-btn" data-text="Клиент">
+					<a href="https://drive.google.com/u/0/uc?export=download&confirm=UPjf&id=1a7Tfc78QxhoQo154MHihlkbYACqn2KIn" class="primary-btn" data-text="Клиент">
 						<span>Клиент</span>
 					</a>
 					
-					<a href="#" class="primary-btn" data-text="Сервер">
+					<a href="https://drive.google.com/u/0/uc?export=download&confirm=2pxL&id=1aKEDfDVsDcwx0MEWiob7xVt7n-w4EcI-" class="primary-btn" data-text="Сервер">
 						<span>Сервер</span>
 					</a>
+					</div>
+					<div class="align-items-center justify-content-center text-center">
+					</br>
+						Скачать предыдущие версии: <a href="" data-tooltip="В разработке">перейти</a>
 					</div>
 				</div>
 			</div>
@@ -127,34 +200,34 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="text-center">
 				
-					<p>1. После скачивания клиента, вам нужно скачать MultiMC с офф сайта: <a href="http://multimc.org/">multimc.org</a>.</p>
+					<p class="p-size">1. После скачивания клиента, вам нужно скачать MultiMC с офф сайта: <a href="http://multimc.org/">multimc.org</a>.</p>
 					<img class="img-scale" src="img/guide/1.png" alt="">
 				
-					<p></br>2. В архиве будет папка MultiMC. Ее перенести в нужное вам место и открыть MultiMC.</p>
+					<p class="p-size"></br>2. В архиве будет папка MultiMC. Ее перенести в нужное вам место и открыть MultiMC.</p>
 					<img class="img-scale" src="img/guide/2.png" alt="">
 
-					<p></br>3. Выберите язык для интерфейса MultiMC и нажмите далее.</p>
+					<p class="p-size"></br>3. Выберите язык для интерфейса MultiMC и нажмите далее.</p>
 					<img class="img-scale" src="img/guide/3.png" alt="">
 
-					<p></br>4. Выберите нужную версию Java. Задайте количество минимального и максимального объема оперативной памяти (ОЗУ)</p>
+					<p class="p-size"></br>4. Выберите нужную версию Java. Задайте количество минимального и максимального объема оперативной памяти (ОЗУ)</p>
 					<img class="img-scale" src="img/guide/4.png" alt="">
 
-					<p></br>5. Установка MultiMC завершена. Нажмите "Завершить" для продолжения</p>
+					<p class="p-size"></br>5. Установка MultiMC завершена. Нажмите "Завершить" для продолжения</p>
 					<img class="img-scale" src="img/guide/5.png" alt="">
 
-					<p></br>6. Далее вам нужно подключить ваш аккаунт Minecraft. Нажмите на "Профили", далее на "Управление учеиными записями"</p>
+					<p class="p-size"></br>6. Далее вам нужно подключить ваш аккаунт Minecraft. Нажмите на "Профили", далее на "Управление учетными записями"</p>
 					<img class="img-scale" src="img/guide/6.png" alt="">
 
-					<p></br>7. Далее нажмите "Добавить", в открывшемся окне введите свои данные от аккаунта Minecraft и нажмите "ОК"</p>
+					<p class="p-size"></br>7. Далее нажмите "Добавить", в открывшемся окне введите свои данные от аккаунта Minecraft и нажмите "ОК"</p>
 					<img class="img-scale" src="img/guide/7.png" alt="">
 
-					<p></br>8. Теперь нужно создать новую сборку, для этого нажмите "Добавить сборку"</p>
+					<p class="p-size"></br>8. Теперь нужно создать новую сборку, для этого нажмите "Добавить сборку"</p>
 					<img class="img-scale" src="img/guide/8.png" alt="">
 
-					<p></br>9. В открывшемся окне нужно написать название сборки и выбрать "Импорт из zip", далее нажать на обзор и указать путь к скачаному архиву со сборкой. После нажать на "ОК"</p>
+					<p class="p-size"></br>9. В открывшемся окне нужно написать название сборки и выбрать "Импорт из zip", далее нажать на обзор и указать путь к скачаному архиву со сборкой. После нажать на "ОК"</p>
 					<img class="img-scale" src="img/guide/9.png" alt="">
 
-					<p></br>10. Готово. Теперь можно запускать для игры, для этого нажмите "Запуск". Приятной игры!</p>
+					<p class="p-size"></br>10. Готово. Теперь можно запускать для игры, для этого нажмите "Запуск". Приятной игры!</p>
 					<img class="img-scale" src="img/guide/10.png" alt="">
 					
 				</div>
@@ -164,7 +237,6 @@
 		</div>
 	</section>
 	<!-- End Service Area -->
-
 	<!-- start footer Area -->
 	<footer class="footer-area">
 		<div class="container">
@@ -178,6 +250,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Mad
 		</div>
 	</footer>
 	<!-- End footer Area -->
+
+	
   
 	  <!-- ####################### Start Scroll to Top Area ####################### -->
 	  <div id="back-top">
