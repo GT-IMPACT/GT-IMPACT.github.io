@@ -4,7 +4,7 @@
     <!-- Mobile Specific Meta -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+	  content="user-scalable=no"
     />
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/fav.png" />
@@ -35,41 +35,54 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-
 	<!-- Start Header Area -->
 	<header id="header">
+		<div class="header-inner">
+			<div class="container main-menu">
+				<div class="row align-items-center d-flex">
+					<div id="logo">
+						<a href="index"><img src="img/logo.png" alt="" title="" /></a>
+					</div>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li class=""><a href="index">Главная</a></li>
+							<li><a class="" href="about">О модпаке</a></li>
+							<li><a class="active" href="download">Скачать</a></li>
+							<li class="menu-has-children"><a href="">Wiki</a>
+								<ul>
+									<li><a href="wiki/gt-addons">GregTech и аддоны</a></li>
+									<li><a data-tooltip="В разработке">Другие моды</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+	<section class="popup-fade">
 		<div class="popup tabs_info scrollbox">
-		<a class="close" href="#">Close</a>
-		<h2 style="font-weight:bold; font-size: 4em; color: #000; text-align: center;" >Список изменений</h2>		
-		<div class="selectTabs">
-			<div class="tab_content" style="font-size: 1.2em; color: #000;">
-				<p class="p-size" style="font-weight:bold; font-size: 2.6em; text-align: center; margin-left: -2px;">IMPACT 1.0 Release Candidate</p>
-				<p class="p-black" style="font-weight:bold; font-size: 2.2em; padding-top: 30px;">MODS:</p>
-				<p>
-					
-					<p class="cl">Forestry</p>
-					
-					     - Увеличены слоты в сумках (тир-1 - 45, тир-2 - 63)
-					
-					</br><p class="cl">AE Stuff</p>
-					
-					     - Изменена механика беспроводных передатчиков
-					</br>- При наведении на беспроводной передатчик показывает общее потребление для пары в EU/t
-					
-					</br><p class="cl">Chest UP</p>
-					
-					     -Изменено отображение тултипов
-					
-					</br><p class="cl">Waila Plugins</p>
-					
-					     - Изменено отображение информации для мультиблоков GregTech
+			<a class="popup-close" href="#">Close</a>
+			<h2 style="font-weight:bold; font-size: 35px; color: #000; text-align: center;" >Список изменений</h2>		
+			<div class="selectTabs">
+				<div class="tab_content" style="color: #000;">
+					<p class="p-size">IMPACT 1.0 Release Candidate</p>
+					<p class="p-black">MODS:</p>
+					<p class="cl">Forestry</p>					
+						- Увеличены слоты в сумках (тир-1 - 45, ир-2 - 63)					
+					</br><p class="cl">AE Stuff</p>					
+						 - Изменена механика безпроводных передатчиков
+					</br>- При наведении на беспроводной передатчик показывает общее потребление для пары в EU/t					
+					</br><p class="cl">Chest UP</p>					
+						 -Изменено отображение тултипов					
+					</br><p class="cl">Waila Plugins</p>					
+						 - Изменено отображение информации для мультиблоков GregTech
 					</br>- Добавлено отображение информации для мультиблоков Impact
 					</br>- Добавлено отображение информации для одноблочных механизмов
 					</br>- Добавлено отображение для одноблочных Battery Buffer
-					</br>- Добавлено отображение для Lapatronic Capacity Storage
-					
+					</br>- Добавлено отображение для Lapatronic Capacity Storage					
 					<p class="cl">GregTech</p>
-
 						 - Добавлена функция переключения для Programmer Circuit (ПКМ + Шифт: -1, ПКМ: +1)
 					</br>- Исправлены рецепты предметов, которые потом не стакаются
 					</br>- Исправлен баг с гуи бассов
@@ -87,59 +100,27 @@
 					</br>- Добавлена функция в Energy detector cover для Lapatronic Capacity Storage
 					</br>- Удалены рецепты дерева в дробителе
 					</br>- Исправлен баг с паровой капсулой, теперь набирается в любом танке
-					</br>- Исправлены рецепты Fusion coil T2
-					
+					</br>- Исправлены рецепты Fusion coil T2					
 					</br><p class="cl">Impact Core</p>
-
-					     - Исправлен баг с Concrete (нагружал мир)
+						 - Исправлен баг с Concrete (нагружал мир)
 					</br>- Исправлены все блоки из мода (не крафтились)
 					</br>- Интегрирован Плагин для руды
 					</br>- Исправлена Wood Form
-					</br>- Добавлен сепаратор для басов многоблоков (все басы общие / каждый бас по раздельности) переключается Шифт+Отвертка по контролеру
+					</br>- Добавлен сепаратор для бассов многоблоков (все басы общие / каждый бас по раздельности) переключается Шифт+Отвертка по контролеру
 					</br>- Исправлен баг с параллельностью
 					</br>- Удален режим многоблоков из гуи (ломал механизмы)
-					</br>- Большое количество исправленных рецептов + перенос скриптов в код
-					
-					</br><p class="cl">NEI Ore Plugin</p>
-					
-						 - Удален (перенесен в Impact Core)
-					
-					</br><p class="p-black" style="font-weight:bold; font-size: 2.2em; padding-top: 30px;">CONFIGS:</p>
-
-						 - Обнулены некоторые конфиги
+					</br>- Большое количество исправленных рецептов + перенос скриптов в код					
+					</br><p class="cl">NEI Ore Plugin</p>					
+						 - Удален (перенесен в Impact Core)					
+					</br><p class="p-black">CONFIGS:</p>
+					- Обнулены некоторые конфиги
 					</br>- Подправлены конфиги GregTech
-					</br><p class="p-black" style="font-weight:bold; font-size: 2.2em; padding-top: 30px;">SCRIPTS:</p>
-					
-						 - Удалены ненужные скрипты (продолжается перенос рецептов в код)
-				</p>
-			</div>
-		</div>			
-	</div>
-		<div class="header-inner">
-		<div class="container main-menu">
-			<div class="row align-items-center d-flex">
-				<div id="logo">
-					<a href="index"><img src="img/logo.png" alt="" title="" /></a>
+					</br><p class="p-black">SCRIPTS:</p>
+					- Удалены ненужные скрипты (продолжается перенос рецептов в код)
 				</div>
-				<nav id="nav-menu-container">
-					<ul class="nav-menu">
-						<li class=""><a href="index">Главная</a></li>
-						<li><a class="" href="about">О модпаке</a></li>
-						<li><a class="active" href="download">Скачать</a></li>
-						<li class="menu-has-children"><a href="">Wiki</a>
-							<ul>
-								<li><a data-tooltip="В разработке">GregTech и аддоны</a></li>
-								<li><a data-tooltip="В разработке">Другие моды</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
+			</div>			
 		</div>
-	</div>
-	</header>
-	<!-- End Header Area -->
-
+	</section>
     <!-- start banner Area -->
     <section class="banner-area relative">
       <div class="container">
@@ -164,7 +145,7 @@
 					<div class="text-center" class="mb-35 wow fadeIn" data-wow-duration=".8s" data-wow-delay=".3s">
 						<p>Скачать актуальную версию</p>
 						<div class="">
-						<p style="color: #000; font-weight:bold;">Перед скачиванием прочтите <a class="show_popup" rel="tabs_info" href="#">список изменений</a></p>
+						<p style="color: #000; font-weight:bold;">Перед скачиванием прочтите <a class="popup-open" href="#">список изменений</a></p>
 						</div>
 					<div class="align-items-center justify-content-center text-center">
 					<a href="https://drive.google.com/u/0/uc?export=download&confirm=UPjf&id=1a7Tfc78QxhoQo154MHihlkbYACqn2KIn" class="primary-btn" data-text="Клиент">
@@ -177,7 +158,7 @@
 					</div>
 					<div class="align-items-center justify-content-center text-center">
 					</br>
-						Скачать предыдущие версии: <a href="" data-tooltip="В разработке">перейти</a>
+						Скачать предыдущие версии: <a href="https://drive.google.com/drive/folders/1ELUpwTLi2JbzshQvqE4p-sszpAhIBnDj?usp=sharing">перейти</a>
 					</div>
 				</div>
 			</div>
