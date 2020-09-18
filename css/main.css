@@ -3422,7 +3422,7 @@ color:#cc0000;
   height:16px;
   display:block;
   text-indent:-9999px;
-  position:absolute;
+  position: fixed;
   top:10px;
   right:10px;
   background:url(../img/close.png) no-repeat;
