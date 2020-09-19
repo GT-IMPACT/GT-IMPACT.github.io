@@ -61,73 +61,148 @@
 		</div>
 	</header>
 	<!-- End Header Area -->
+	<!-- Start Changlog -->
 	<section class="popup-fade">
 		<div class="popup tabs_info scrollbox">
 			<a class="popup-close" href="#">Close</a>
 			<h2 style="font-weight:bold; font-size: 35px; color: #000; text-align: center;" >Список изменений</h2>		
 			<div class="selectTabs">
 				<div class="tab_content" style="color: #000;">
-					<p class="p-size">IMPACT 1.0 Release Candidate</p>
-					<p class="p-black">MODS:</p>
-					<p class="cl">Forestry</p>					
-						- Увеличены слоты в сумках (тир-1 - 45, ир-2 - 63)					
-					</br><p class="cl">AE Stuff</p>					
-						 - Изменена механика безпроводных передатчиков
-					</br>- При наведении на беспроводной передатчик показывает общее потребление для пары в EU/t					
-					</br><p class="cl">Chest UP</p>					
-						 -Изменено отображение тултипов					
-					</br><p class="cl">Waila Plugins</p>					
-						 - Изменено отображение информации для мультиблоков GregTech
-					</br>- Добавлено отображение информации для мультиблоков Impact
-					</br>- Добавлено отображение информации для одноблочных механизмов
-					</br>- Добавлено отображение для одноблочных Battery Buffer
-					</br>- Добавлено отображение для Lapatronic Capacity Storage					
-					<p class="cl">GregTech</p>
-						 - Добавлена функция переключения для Programmer Circuit (ПКМ + Шифт: -1, ПКМ: +1)
-					</br>- Исправлены рецепты предметов, которые потом не стакаются
-					</br>- Исправлен баг с гуи бассов
-					</br>- Добавлен сепаратор(разделение, пример: 10000, теперь отображается как: 10,000)
-					</br>- Подправлен рудоген
-					</br>- Исправлены некоторые материалы и их переработка
-					</br>- Исправлены крафты с пластинами из Обсидиана
-					</br>- Добавлен новый Шейп для экструдера (Shaft)
-					</br>- Добавлена жидкость Herbicide для крафта Weed-ex
-					</br>- Возвращены крафты одноблоков: Scanner, Heater
-					</br>- Переименованы роторы для турбин
-					</br>- Добавлена руда Плутония241
-					</br>- Исправлена химическая ветка в эндгейме
-					</br>- Добавлены новые нагревательные кольца
-					</br>- Добавлена функция в Energy detector cover для Lapatronic Capacity Storage
-					</br>- Удалены рецепты дерева в дробителе
-					</br>- Исправлен баг с паровой капсулой, теперь набирается в любом танке
-					</br>- Исправлены рецепты Fusion coil T2					
-					</br><p class="cl">Impact Core</p>
-						 - Исправлен баг с Concrete (нагружал мир)
-					</br>- Исправлены все блоки из мода (не крафтились)
-					</br>- Интегрирован Плагин для руды
-					</br>- Исправлена Wood Form
-					</br>- Добавлен сепаратор для бассов многоблоков (все басы общие / каждый бас по раздельности) переключается Шифт+Отвертка по контролеру
-					</br>- Исправлен баг с параллельностью
-					</br>- Удален режим многоблоков из гуи (ломал механизмы)
-					</br>- Большое количество исправленных рецептов + перенос скриптов в код					
-					</br><p class="cl">NEI Ore Plugin</p>					
-						 - Удален (перенесен в Impact Core)					
-					</br><p class="p-black">CONFIGS:</p>
-					- Обнулены некоторые конфиги
-					</br>- Подправлены конфиги GregTech
-					</br><p class="p-black">SCRIPTS:</p>
-					- Удалены ненужные скрипты (продолжается перенос рецептов в код)
+					<p class="p-size">IMPACT 1.0 Release Candidate 2</p>
+					<p class="p-black">MODS:</p><hr>
+					<ul>Applied Energistics				
+						<li>Исправлено отображение механизмов в Waila</li>
+						<li>Исправлен баг с Интерфейсом (выдавал отрицательные значения, что вело к крашу)</li>
+						<li>Добавлена возможность переименовывать механизмы с помощью устройства Laptop из Gregtech</li>
+					</ul>
+					<ul>Carpenters Block
+						<li>Множественные фиксы серверной части</li>
+					</ul>
+					<ul>Chisel
+						<li>Исправлены дюпы с контейнерами</li>
+					</ul>
+					<ul>EnderIO
+						<li>Добавлены большие фильтры для кондуитов</li>
+						<li>Портированы кондуиты с версии 1.12 (Переработана логика работы, обновлены текстуры)</li>
+					</ul>
+					<ul>ExtraCells
+						<li>Портирована ордикт шина с версии 1.12 (Теперь работают условия | и & без ошибок)</li>
+						<li>Исправлена загрузка НБТ шины хранения</li>
+						<li>Обвновлены кнопки в гуи жидкостного терминала</li>
+						<li>Исправлен дюп с кварцевым танком</li>
+						<li>Исправлен дюп с переполнением компонентов в хранилище</li>
+						<li>Исправлен дюп с экспорт шиной</li>
+						<li>Исправлены визуальные баги</li>
+					</ul>
+					<ul>Forestry
+						<li>Удален рецепт удобрения</li>
+					</ul>
+					<ul>GregTech
+						<li>Добавлено оверклок для чистой комнаты</li>
+						<li>Добавлена интеграция с хэтчами из TecTech</li>
+						<li>Удалена проверка воздуха у контролеров больших турбин</li>
+						<li>Добавлена кнопка для включения автовыхода у одноблочных танков (функция с отверткой удалена)</li>
+						<li>Добавлен режим блокировки жидкости для одноблочных танков</li>
+						<li>Исправлен лаг при просмотре тултипа Программируемой микросхемы</li>
+						<li>Добавлена функция для молота - сбивание кальция с паровых солнечных панелей</li>
+						<li>Добавлено новое топливо под Naquadah Generator</li>
+						<li>Еще одна попытка исправить текстуры генератора воздуха</li>
+						<li>Исправлены рецепты в dust washer</li>
+						<li>Исправлена формула у грисиума</li>
+						<li>Добавлен новый инструмент - Laptop</li>
+						<li>Добавлена функция смены местами жидокстей в одноблочных механизмах</li>
+						<li>Добавлены гуи для всех каверов</li>
+						<li>Добавлены новые типы предметных труб</li>
+						<li>Исправлены размеры больших труб (теперь не занимают весь блок)</li>
+						<li>Добавлен Heavy Oil в рецепт Flotation Unite</li>
+						<li>Изменено энергопотребление Flotation Unite</li>
+						<li>Фикс руды Perlite</li>
+						<li>Изменен рецепт Fluid Filter</li>
+						<li>Изменена высота генерации жилы кварца</li>
+						<li>В рецепт краски добавлена микросхема</li>
+						<li>Удалены рецепты у одноблочных Naquadah Generator</li>
+						<li>Удален рецепт контроллера у Processing Array</li>
+						<li>Изменен рецепт Eye of Ender</li>
+						<li>Изменено получение информации с механизмов сканером</li>
+					</ul>
+					<ul>Impact Core
+						<li>Добавлены новые наквадах генераторы</li>
+						<li>Добавлен новый гипер генератор</li>
+						<li>Добавлен Heavy metal cyclone</li>
+						<li>Исправлена голограмма электролизера</li>
+						<li>Удалены все злые мобы, а также кошки и летучие мыши</li>
+						<li>Добавлены декоративные блоки</li>
+						<li>Отключена пассивная разрядка с мультиблочной батарейки</li>
+						<li>Полностью перенесены машины из KekzTech и добавлены голограммы</li>
+						<li>Добавлена голограмма для фермы дерева</li>
+						<li>Добавлены рецепты под Ztones, ChickenChunks, WirelessCraftingTerminal</li>
+						<li>Добавлены альтернативные рецепты для Pattern из АЕ</li>
+						<li>Рецепт корпусов для машин увеличен в 2 раза</li>
+						<li>Изменено время производство сплавов</li>
+						<li>В рецепт ULV Conveyor добавлена резина</li>
+						<li>Кинетический генератор из IC2 стал дешевле</li>
+						<li>Добавлены альтернативные рецепты для солнечных панелей</li>
+						<li>Добавлен рецепт переработки солнечных панелей из Impact Core</li>
+						<li>Изменено множество рецептов в OpenComputers</li>
+						<li>В рецепт MultiAssembler добавлен IV Emitter</li>
+						<li>В рецепты с применением деревянных дверей добавлены варианты из Malisis Doors</li>
+						<li>Добавлены рецепты для мода Practical Logistics</li>
+						<li>В рецепты контроллеров мультиблоков добавлен Large Display из мода Practical Logistics</li>
+						<li>Добавлен рецепт для Laptop</li>
+						<li>Фикс рецепта Genetic Circuit</li>
+						<li>Добавлен новый рецепт для ArcLamp</li>
+						<li>Фикс рецепта Advanced Lappack</li>
+						<li>Фикс рецептов Portable Tank</li>
+						<li>Изменены рецепты UV+ микросхем</li>
+						<li>Изменены рецепты у ICChip и Screwdriver из мода ProjectRed</li>
+						<li>Для брони К2Р4 добавлена интеграция защиты от радиации и тд</li>
+					</ul>
+					<ul>Industrial Craft 2
+						<li>Увеличен радиус работы Crop Matron и Crop Harvester (25x3x25)</li>
+					</ul>
+					<ul>Kekztech
+						<li>Удален (перенесен в Impact Core)</li>
+					</ul>
+					<ul>Nuclear Control
+						<li>Исправлено множество визуальных багов</li>
+					</ul>
+					<ul>Practical Logistics
+						<li>Добавлен в сборку</li>
+						<li>Добавлена интеграция с GregTech</li>
+					</ul>
+					<ul>TecTech
+						<li>Изменены рецепты мультиамперных хэтчей</li>
+					</ul>
+					<ul>WAILAPlugins
+						<li>Добавлена интеграция с TecTech</li>
+					</ul>
+					<ul>Ztones
+						<li>Исправлен серверный баг с переключением блоков</li>
+					</ul>
+					<p class="p-black">CONFIGS:</p><hr>
+					<ul>
+						<li>Исправление высот жилы Касситерита</li>
+						<li>Отключена генерация жилы Касситерита на Луне</li>
+						<li>Исправлено отображение жилы Форсициума</li>
+					</ul>
+					<p class="p-black">SCRIPTS:</p><hr>
+					<ul>
+						<li>Удалены ненужные скрипты (продолжается перенос рецептов в код)</li>
+						<li>Удалены скрипты под WirelessCraftingTerminal, Ztones, ChickenChunks</li>
+						<li>Изменен рецепт большого фильтра из EnderIO</li>
+					</ul>
 				</div>
 			</div>			
 		</div>
 	</section>
+	<!-- end Changlog -->
     <!-- start banner Area -->
     <section class="banner-area relative">
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">Скачать IMPACT</h1>
-            <p>Актуальная версия: 1.0-RC</p>
+            <p>Актуальная версия: 1.0-RC2</p>
           </div>
         </div>
       </div>
@@ -148,17 +223,17 @@
 						<p style="color: #000; font-weight:bold;">Перед скачиванием прочтите <a class="popup-open" href="#">список изменений</a></p>
 						</div>
 					<div class="align-items-center justify-content-center text-center">
-					<a href="https://drive.google.com/u/0/uc?export=download&confirm=UPjf&id=1a7Tfc78QxhoQo154MHihlkbYACqn2KIn" class="primary-btn" data-text="Клиент">
-						<span>Клиент</span>
+					<a href="https://drive.google.com/uc?id=1wh4WiBtqcoltMD0pzPNvdhDFkUUU0dX9&export=download" class="primary-btn" data-text="CLIENT" target="_blank">
+						<span>CLIENT</span>
 					</a>
 					
-					<a href="https://drive.google.com/u/0/uc?export=download&confirm=2pxL&id=1aKEDfDVsDcwx0MEWiob7xVt7n-w4EcI-" class="primary-btn" data-text="Сервер">
-						<span>Сервер</span>
+					<a href="https://drive.google.com/uc?id=1Pujg7OjGG5nSCtXeozLO1MYi14ry-279&export=download" class="primary-btn" data-text="SERVER" target="_blank">
+						<span>SERVER</span>
 					</a>
 					</div>
 					<div class="align-items-center justify-content-center text-center">
 					</br>
-						Скачать предыдущие версии: <a href="https://drive.google.com/drive/folders/1ELUpwTLi2JbzshQvqE4p-sszpAhIBnDj?usp=sharing">перейти</a>
+						Скачать предыдущие версии: <a href="https://drive.google.com/drive/folders/1ELUpwTLi2JbzshQvqE4p-sszpAhIBnDj?usp=sharing" target="_blank">перейти</a>
 					</div>
 				</div>
 			</div>

@@ -3396,11 +3396,19 @@ color:#cc0000;
   overflow: auto;
 }
 
-.popup .cl {
+.popup ul {
   padding-top: 10px;
   margin-bottom: 0;
   font-size: 15px;
   font-weight: bold;
+}
+.popup li{
+  padding-top: 1px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 .popup .p-black {
   font-weight:bold; 
