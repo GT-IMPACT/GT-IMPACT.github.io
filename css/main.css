@@ -3321,6 +3321,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
    }
    [data-tooltip]::after {
+    font-size: 10px;
     content: attr(data-tooltip);
     position: absolute;
     width: 120px;
