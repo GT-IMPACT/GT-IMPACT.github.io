@@ -17,7 +17,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>Impact Wiki - Primitive Water Pump</title>
+    <title>Impact Wiki - Pyrolyse Oven</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Play:300,400,500,600,700"
@@ -72,8 +72,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="section-title text-center">
-						<h1 class="p-black">Primitive Water Pump</h1>
-						<h4 class="p-black">Примитивная водокачка</h4>
+						<h1 class="p-black">Pyrolyse Oven</h1>
+						<h4 class="p-black">Пиролизная печь</h4>
 						<hr>
 						<div class="tab-wiki menu" style="float: left;">
 						  <button class="tablinks" onclick="openCity(event, 'Description')" id="defaultOpen">Описание</button>
@@ -90,17 +90,17 @@
 						<div id="bg-left"></div>
 						<div id="bg-right"></div>
 						<div id="content-left">
-							Примитивная водокачка - это многоблочная машина, добавленная модификацией Impact Core.</br>
+							Пиролизная печь - это многоблочная машина, добавленная модификацией Impact Core.</br>
 							<hr>
-							Предназначена для генерации воды на начальных этапах и в трудодоступных местах без электропитания.
+							Принцип работы пиролизной печи основан на термическом разложении органических веществ на пиролизные газы и твердые остатки.
 		
 							
 							
 						</div>
 						<div id="content-right">
 		
-							<img class="img-fluid" style="transform: scale(-1, 1)" src="../img/wiki/primwaterpump.png"> 
-							<p>Primitive Water Pump в собранной форме</p>
+							<img class="img-fluid" src="../img/wiki/purolyse.png"> 
+							<p>Pyrolyse Oven в собранной форме</p>
 							
 						</div>
 					</div>
@@ -113,44 +113,25 @@
 						<div id="bg-left"></div>
 						<div id="bg-right"></div>
 						<div id="content-left">
-							Машина генерирет воду без электричества в зависимости от биома в котором находится контролер.<hr>
-							
-							<p style="font-weight: bold; margin-bottom: -5px">Коэффициент генерации воды:</p><br>
-							Коэффициент генерации воды - h.
-							Коэффициент изменяется с помощью Output Hatch:
-							<li>Pump Output Hatch: h = 1</li>
-							<li>ULV Output Hatch: h = 2</li>
-							<li>LV Output Hatch: h = 3</li>
-
-							<br><p style="font-weight: bold; margin-bottom: -5px">Биомный коэффициент:</p><br>
-							Биомный коэффициент - b.
-							Коэффициент изменяется с помощью биома, в котором находится контролер:
-							<li>Ocean, River: b = 1000 L/s</li>
-							<li>Swamplant: b = 800 L/s</li>
-							<li>Jungle: b = 350 L/s</li>
-							<li>Snow, Iceland: b = 300 L/s</li>
-							<li>Plains, Forest: b = 250 L/s</li>
-							<li>Taiga: b = 175 L/s</li>
-							<li>Beach: b = 170 L/s</li>
-							<li>Остальные: b = 100 L/s</li>
-
-							<br><p style="font-weight: bold; margin-bottom: -5px">Генерации воды:</p><br>
-							Вода генерируется при двух показателях (коэффициентах) по следующей формуле:<br>
-							Генерация воды (L/s) = h * b
+							Машина имеет уникальную механику - выход продуктов во время работы.
+							<br>
+							<hr>
+							<p style="font-weight: bold; margin-bottom: -5px">Принцип работы:</p>
+							<br>
+							Во время ("Time", см. рисунок) выполнения рецепта происходит выход газов и твердого топлива:
+							<li>На 7 секунде - Carbon Monoxide (72L)</li>
+							<li>На 14 секунде - Hydrogen Gas (288L)</li>
+							<li>На 21 секунде - Methane Gas (144L)</li>
+							<li>На 28 секунде - CO2 Gas (216L)</li>
+							<li>На 35 секунде - Wood Tar (1440L) и Charcoal (5)</li>
 
 						</div>
 						<div id="content-right">
-							<p style="padding-top: 10px; padding-bottom: 8px">
-								<b style="color: black;">Пример генерации воды</b>
-							</p>
-							<p style="text-align: justify;">
-								В биоме Plains c Pump Output Hatch генерация воды будет равна:<br>
-								<em>Генерация воды = 250 * 1 = 250 L/s.</em>
-							</p>
-							<p style="text-align: justify;">
-								В биоме River c LV Output Hatch генерация воды будет равна:<br>
-								<em>Генерация воды = 1000 * 3 = 3000 L/s.</em>
-							</p>
+	
+							<img class="img-fluid" style=" box-shadow: 0 0 8px 0px rgba(0,0,0,.6);" src="../img/wiki/pyroRecipeNew.png">
+							
+							<p style="padding-top: 10px; padding-bottom: 8px">Пиролиз опилок</p>
+
 						</div>
 					</div>
 				</div>
@@ -163,24 +144,35 @@
 						<div id="bg-left"></div>
 						<div id="bg-right"></div>
 						<div id="content-left">
-							Для постройки этого мультиблока вам понадобятся 2 типа блоков: Primitive Pump Deck и Wood Frame Box.</br>
+							Для постройки этого мультиблока вам понадобятся 3 типа блоков: Solid Steel Machine Casing, Steel Pipe Casing и Steel Frame Box.</br>
 							<hr>
-							Output Hatch (устанавливается в красном квадрате на голограмме):
-							Остальные люки обслуживания не требуются.<br>
-
-							<br>*Не забудьте включить мультиблок с помощью Soft Mallet
+							Люки обслуживания (устанавливаются в любом месте вместо Solid Steel Machine Casing):
+							<li>LV Energy Hatch: 1x</li>
+							<li>Maintenance Hatch: 1x</li>
+							<li>Muffler Hatch: 1x</li>
+							<li>Output Bus: до 1x </li>
+							<li>Output Hatch: до 1x</li>
+							<li>Input Bus: 1x</li>
+							Остальные люки обслуживания не требуются.
 							<hr>
 
 							<p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint из мода TecTech, кликните им по контролеру мультиблока.</p>
 
+							
+							<p style="font-weight: bold; margin-bottom: -5px">Важно!</p>
+							<p>Так так в структуре возможна установка только одного Output Hatch, возникает вопрос как выводить все жидкости (5 видов) из одного хэтча. Рекомендуется использовать многожильные трубы (Nonuple Fluid Pipe).</p>
+							<p>Пиролизная печь не ускоряется, менять Energy Hatch не имеет смысла.</p>
 						</div>
 						<div id="content-right">
 	
-							<img class="img-fluid" width="150" src="../img/wiki/PrimitivePumpDeck.png"> 
-							<p>Primitive Pump Deck</p>
+							<img class="img-fluid" width="150" src="../img/wiki/SteelSolid.png"> 
+							<p>Solid Steel Machine Casing</p>
 
-							<img class="img-fluid" width="150" src="../img/wiki/WoodFrameBox.png"> 
-							<p>Wood Frame Box</p>
+							<img class="img-fluid" width="150" src="../img/wiki/SteelPipe.png"> 
+							<p>Steel Pipe Casing</p>
+							
+							<img class="img-fluid" width="150" src="../img/wiki/SteelFrame.png"> 
+							<p>Steel Frame Box</p>
 							
 						</div>
 					</div>
