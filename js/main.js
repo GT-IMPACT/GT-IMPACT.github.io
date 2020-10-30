@@ -475,3 +475,29 @@ $(document).ready(function($) {
 		}
 	});	
 });
+
+function primitiveWater() {
+  biomewater  = document.getElementById('biomewater').value;
+  tierwater  = document.getElementById('tierwater').value;
+  if(biomewater == "Биом"){
+    document.getElementById('totalwater').innerHTML = "Не выбран Biome";
+  } else if(tierwater == "Хэтч"){
+    document.getElementById('totalwater').innerHTML = "Не выбран Output Hatch";
+  } else {
+    totalwater = biomewater * tierwater;
+    document.getElementById('totalwater').innerHTML = "Ответ: "+ totalwater + " L/s";
+  }
+}
+
+function elWater() {
+  biomewater  = document.getElementById('biomewater').value;
+  tierwater  = document.getElementById('tierwater').value;
+  if(biomewater == "Биом"){
+    document.getElementById('totalwater').innerHTML = "Не выбран Biome";
+  } else if(tierwater == "Хэтч"){
+    document.getElementById('totalwater').innerHTML = "Не выбран Hatch";
+  } else {
+    totalwater = (1 << tierwater - 1) * 2 * biomewater;
+    document.getElementById('totalwater').innerHTML = "Ответ: "+ totalwater + " L/s";
+  }
+}

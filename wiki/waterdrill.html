@@ -17,7 +17,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>Impact Wiki - Primitive Water Pump</title>
+    <title>Impact Wiki - Electric Water Drilling Rig</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Play:300,400,500,600,700"
@@ -72,8 +72,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="section-title text-center">
-						<h1 class="p-black">Primitive Water Pump</h1>
-						<h4 class="p-black">Примитивная водокачка</h4>
+						<h1 class="p-black">Electric Water Drilling Rig</h1>
+						<h4 class="p-black">Электрическая буровая водокачка</h4>
 						<hr>
 						<div class="tab-wiki menu" style="float: left;">
 						  <button class="tablinks" onclick="openCity(event, 'Description')" id="defaultOpen">Описание</button>
@@ -90,17 +90,17 @@
 						<div id="bg-left"></div>
 						<div id="bg-right"></div>
 						<div id="content-left">
-							Примитивная водокачка - это многоблочная машина, добавленная модификацией Impact Core.</br>
+							Электрическая буровая водокачка - это многоблочная машина, добавленная модификацией Impact Core.</br>
 							<hr>
-							Предназначена для генерации воды на начальных этапах и в трудодоступных местах без электропитания.
+							Предназначена для выкачивания воды из бедрока с помощью электричества.
 		
 							
 							
 						</div>
 						<div id="content-right">
 		
-							<img class="img-fluid" style="transform: scale(-1, 1)" src="../img/wiki/primwaterpump.png"> 
-							<p>Primitive Water Pump в собранной форме</p>
+							<img class="img-fluid" style="transform: scale(-1, 1)" src="../img/wiki/ElWater.png"> 
+							<p>Electric Water Drilling Rig в собранной форме</p>
 							
 						</div>
 					</div>
@@ -113,14 +113,11 @@
 						<div id="bg-left"></div>
 						<div id="bg-right"></div>
 						<div id="content-left">
-							Машина генерирет воду без электричества в зависимости от биома в котором находится контролер.<hr>
+							Машина выкачивает воду из бедрока с помощью электричества, в зависимости от биома в котором находится контролер, тира Energy Hatch и Output Hatch.<hr>
 							
 							<p style="font-weight: bold; margin-bottom: -5px">Коэффициент генерации воды:</p><br>
 							Коэффициент генерации воды - h.
-							Коэффициент изменяется с помощью Output Hatch:
-							<li>Pump Output Hatch: h = 1</li>
-							<li>ULV Output Hatch: h = 2</li>
-							<li>LV Output Hatch: h = 3</li>
+							Коэффициент изменяется с помощью тира Energy Hatch и Output Hatch.
 
 							<br><p style="font-weight: bold; margin-bottom: -5px">Биомный коэффициент:</p><br>
 							Биомный коэффициент - b.
@@ -136,7 +133,7 @@
 
 							<br><p style="font-weight: bold; margin-bottom: -5px">Генерации воды:</p><br>
 							Вода генерируется при двух показателях (коэффициентах) по следующей формуле:<br>
-							Генерация воды (L/s) = h * b
+							Генерация воды (L/s) = (1 * 2 ^ h) * 2 * b
 
 						</div>
 						<div id="content-right">
@@ -144,12 +141,8 @@
 								<b style="color: black;">Пример генерации воды</b>
 							</p>
 							<p style="text-align: justify;">
-								В биоме Plains c Pump Output Hatch генерация воды будет равна:<br>
-								<em>Генерация воды = 250 * 1 = 250 L/s.</em>
-							</p>
-							<p style="text-align: justify;">
-								В биоме River c LV Output Hatch генерация воды будет равна:<br>
-								<em>Генерация воды = 1000 * 3 = 3000 L/s.</em>
+								В биоме Plains c HV Energy Hatch генерация воды будет равна:<br>
+								<em>Генерация воды = (1 * 2 ^ 3) * 2 * 250 = 2000 L/s.</em>
 							</p>
 							<p style="padding-top: 10px; padding-bottom: 8px;">
 								<b style="color: black;">Калькулятор генерации воды</b><br>
@@ -168,12 +161,18 @@
 							
 							
 							<select type="text" id="tierwater" style="width: 100%; margin-bottom: 8px;">
-								<option selected disabled value="Хэтч">Выберите Output Hatch</option>
-								<option value="1">Pump Output Hatch</option>
-								<option value="2">ULV Output Hatch</option>
-								<option value="3">LV Output Hatch</option>
+								<option selected disabled value="Хэтч">Выберите Output/Energy Hatch</option>
+								<option value="1">LV Output/Energy Hatch</option>
+								<option value="2">MV Output/Energy Hatch</option>
+								<option value="3">HV Output/Energy Hatch</option>
+								<option value="4">EV Output/Energy Hatch</option>
+								<option value="5">IV Output/Energy Hatch</option>
+								<option value="6">LuV Output/Energy Hatch</option>
+								<option value="7">ZPM Output/Energy Hatch</option>
+								<option value="8">UV Output/Energy Hatch</option>
+								<option value="9">UHV Output/Energy Hatch</option>
 							</select>
-							<button style="margin-top: 10px;" onclick="primitiveWater()">Рассчитать</button>
+							<button style="margin-top: 10px;" onclick="elWater()">Рассчитать</button>
 							<p id="totalwater"></p>
 						</div>
 					</div>
@@ -187,31 +186,34 @@
 						<div id="bg-left"></div>
 						<div id="bg-right"></div>
 						<div id="content-left">
-							Для постройки этого мультиблока вам понадобятся 2 типа блоков: Primitive Pump Deck и Wood Frame Box.</br>
+							Для постройки этого мультиблока вам понадобятся 2 типа блоков: Solid Steel Machine Casing и Steel Frame Box.</br>
 							<hr>
-							Output Hatch (устанавливается в красном квадрате на голограмме):
-							Остальные люки обслуживания не требуются.<br>
-
-							<br>*Не забудьте включить мультиблок с помощью Soft Mallet
+							<li>Energy Hatch: 1x</li>
+							<li>Maintenance Hatch: 1x</li>
+							<li>Output Hatch: 1x</li>
+							Остальные люки обслуживания не требуются.
 							<hr>
 
 							<p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint из мода TecTech, кликните им по контролеру мультиблока.</p>
 
+							<p style="font-weight: bold; margin-bottom: -5px">Важно!</p>
+							<p>В структуре Energy Hatch и Output Hatch должны быть одного тира.</p>
+
+							Не забудьте положить Mining pipe в слот контролера, либо в дополнительный Input Bus.
+							
+
 						</div>
 						<div id="content-right">
 	
-							<img class="img-fluid" width="150" src="../img/wiki/PrimitivePumpDeck.png"> 
-							<p>Primitive Pump Deck</p>
+							<img class="img-fluid" width="150" src="../img/wiki/SteelSolid.png"> 
+							<p>Solid Steel Machine Casing</p>
 
-							<img class="img-fluid" width="150" src="../img/wiki/WoodFrameBox.png"> 
-							<p>Wood Frame Box</p>
+							<img class="img-fluid" width="150" src="../img/wiki/SteelFrame.png"> 
+							<p>Steel Frame Box</p>
 							
 						</div>
 					</div>
 				</div>
-			</div>
-
-
 			</div>
 		</div>
 	</section>
