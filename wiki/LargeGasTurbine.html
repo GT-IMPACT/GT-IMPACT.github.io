@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <head>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+	  content="user-scalable=no"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../img/fav.png" />
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>Impact Wiki - Large Gas Turbine</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Play:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="../css/flaticon.css" />
+    <link rel="stylesheet" href="../css/themify-icons.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/nice-select.css" />
+    <link rel="stylesheet" href="../css/animate.min.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+
+	</style>
+  </head>
+
+  <body>
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="header-inner">
+		<div class="container main-menu">
+			<div class="row align-items-center d-flex">
+				<div id="logo">
+					<a href="../index"><img src="../img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li><a href="../index">Главная</a></li>
+						<li><a href="../about">О модпаке</a></li>
+						<li><a href="../download">Скачать</a></li>
+						<li class="menu-has-children"><a class="active" href="">Wiki</a>
+							<ul>
+								<li><a href="gt-addons">GregTech и аддоны</a></li>
+								<li><a data-tooltip="В разработке">Другие моды</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	</header>
+	<!-- End Header Area -->
+	<!-- Start Service Area -->
+	<section class="service-area section-gap-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title text-center">
+						<h1 class="p-black">Large Gas Turbine</h1>
+						<h4 class="p-black">Большая газовая турбина</h4>
+						<hr>
+						<div class="tab-wiki menu" style="float: left;">
+						  <button class="tablinks" onclick="openCity(event, 'Description')" id="defaultOpen">Описание</button>
+						  <button class="tablinks" onclick="openCity(event, 'Mechanics')">Механика работы</button>
+						  <button class="tablinks" onclick="openCity(event, 'Schematics')">Постройка</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Description" class="tabcontent-wiki2">
+				<div class="row wiki">
+	
+					<div id="wiki-content">
+						<div id="bg-left"></div>
+						<div id="bg-right"></div>
+						<div id="content-left">
+							Большая газовая турбина - это многоблочная машина-генератор, добавленная модификацией GregTech.</br>
+							<hr>
+							Турбина способна выработывать энергию, тратя при этом газ. Медленно разгоняется, используется для продолжительной выработки энергии.
+
+							<p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Важно!</p>
+							Изменена механика работы по сравнению с официальной версией GregTech, внимательно прочитайте представленую информацию.
+		
+							
+							
+						</div>
+						<div id="content-right">
+		
+							<img class="img-fluid" src="../img/wiki/GasLargeTrubine.png"> 
+							<p>Large Gas Turbine в собранной форме</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="Mechanics" class="tabcontent-wiki2">
+				<div class="row wiki">
+					<div id="wiki-content">
+						<div id="bg-left"></div>
+						<div id="bg-right"></div>
+						<div id="content-left">
+							Большая газовая турбина работает на различных газах.<hr>
+						
+							Турбине требуется ротор для работы. Есть множество их вариантов, различающихся по размеру, материалу, эффективности работы и модификатору оптимальной подачи.
+							<p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Важно!</p>
+							Ротор является одноразовым, то есть вы вставляете его в интерфейс контролера турбины, турбина запоминает характеристики и удаляет ротор, характеристики сохраняются до тех пор, пока вы не сломаете контролер.
+							
+							<p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Эффективность:</p>
+							Efficiency (Эффективность) - процентное отношение, влияющее на энергетический выход турбины.<br>
+
+							
+							<p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Оптимальный поток:</p>
+							Optimal Flow (Оптимальный поток) - это размер потока, необходимый для достижения оптимального энергетического выхода турбины. У каждого ротора есть индивидуальное значение оптимального потока.
+							
+							<p style="padding-top: 5px; margin-bottom: 5px; ">Так как турбина может принимать разный газ оптимальный поток указывается не в L/t, а в EU/t.</p>
+							
+							Для газа используется Actual Optimal Flow (Реальный оптимальный поток), выполняется по формуле:<br>
+
+							<b>Actual Optimal Flow (L/t) = Optimal Flow / (Fuel Value / 1000)</b>
+
+							<p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Энергоплотность газа:</p>
+							Fuel Value (Энергоплотность). Определить её можно с помощью NEI, находим нужное нам топливо и смотрим использование в турбине, там показывается энергоемкость одной капсулы.
+
+							<p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Генерация энергии:</p>
+							Генерация энергии выполняется по формуле: <br>
+							<b>EU/t = Actual Optimal Flow * (Fuel Value / 1000) * (Efficiency / 100)</b>
+						</div>
+						<div id="content-right">
+							<p style="padding-top: 10px; padding-bottom: 8px">
+								<b style="color: black;">Пример генерации энергии из газа</b>
+							</p>
+							<p style="text-align: justify;">
+								Большой Ротор из материала Carbon с эффективностью - 120, с оптимальным потоком - 150 EU/t и Refinery Gas с энергоплотностью 128000 EU на капсулу.<br>
+								<br>
+								Реальный опимальный поток:<br>
+								<em>150 / (128000 / 1000) = 1 L/t.</em><br><br>
+								Генерация энергии:<br>
+								<em>1 * (128000 / 1000) * (120 / 100) = 154 EU/t.</em>
+							</p>
+							<p style="padding-top: 10px; padding-bottom: 8px;">
+								<b style="color: black;">Калькулятор генерации энергии из газа</b><br>
+							</p>
+							<input placeholder="Optimal Flow (EU/t)" type="text" id="flow" style="width: 100%; margin-bottom: 8px;">
+							<input placeholder="Efficiency" type="text" id="efficienty" style="width: 100%; margin-bottom: 8px;">
+							<input placeholder="Fuel Value (in NEI)" type="text" id="fuelvalue" style="width: 100%; margin-bottom: 8px;">
+							
+							<button style="margin-top: 10px;" onclick="gasLargeTurbine()">Рассчитать</button>
+							<p style="margin: 4px 0;" id="FlowOk"></p>
+							<p id="FlowNotOk"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="Schematics" class="tabcontent-wiki2">
+				<div class="row wiki">
+
+					<div id="wiki-content">
+						<div id="bg-left"></div>
+						<div id="bg-right"></div>
+						<div id="content-left">
+							Для постройки этого мультиблока вам понадобятся блок: Stainless Steel Turbine Casing.</br>
+							<hr>
+							<li>Dynamo Hatch (Сзади по центру): 1x</li>
+							<li>Maintenance Hatch (Сбоку по центру): 1x</li>
+							<li>Input Hatch для ufpf (Сбоку по центру): 1x</li>
+							<li>Muffler Hatch (Сбоку по центру): 1x</li>
+							Остальные люки обслуживания не требуются.
+							<hr>
+
+							<p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint из мода TecTech, кликните им по контролеру мультиблока.</p>
+
+						</div>
+						<div id="content-right">
+							<img class="img-fluid" width="150" src="../img/wiki/StainlessSteel.png"> 
+							<p>Stainless Steel Turbine Casing</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Service Area -->
+
+	<!-- start footer Area -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-text">
+						<p class="p-white">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Made by 4gname</p></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+  
+	  <!-- ####################### Start Scroll to Top Area ####################### -->
+	  <div id="back-top">
+		<a title="Go to Top" href="#"> <i class="ti-angle-double-up"></i> </a>
+	  </div>
+	  <!-- ####################### End Scroll to Top Area ####################### -->
+  
+	  <script src="../js/vendor/jquery-2.2.4.min.js"></script>
+	  <script src="../js/vendor/bootstrap.min.js"></script>
+	  <script src="../js/easing.min.js"></script>
+	  <script src="../js/hoverIntent.js"></script>
+	  <script src="../js/superfish.min.js"></script>
+	  <script src="../js/mn-accordion.js"></script>
+	  <script src="../js/jquery.ajaxchimp.min.js"></script>
+	  <script src="../js/jquery.magnific-popup.min.js"></script>
+	  <script src="../js/owl.carousel.min.js"></script>
+	  <script src="../js/jquery.nice-select.min.js"></script>
+	  <script src="../js/isotope.pkgd.min.js"></script>
+	  <script src="../js/mail-script.js"></script>
+	  <script src="../js/wow.min.js"></script>
+	  <script src="../js/main.js"></script>
+	</body>
+  </html>

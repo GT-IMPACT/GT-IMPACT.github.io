@@ -9,10 +9,10 @@
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #17417f;
-  color: #fff; }
+  color: #000; }
 
 ::selection {
-  background-color: #fff;
+  background-color: #000;
   color: #fff; }
 
 ::-webkit-input-placeholder {
@@ -3517,6 +3517,7 @@ color:#cc0000;
   border: none;
   outline: none;
   cursor: pointer;
+  width: 170px;
   padding: 14px 16px;
   margin-left: -5px;
   transition: 0.3s;
