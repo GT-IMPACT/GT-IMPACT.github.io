@@ -538,14 +538,14 @@ function gasLargeTurbine() {
   } else {
     
     optimalFlow = Math.floor(flow / (fuelvalue / 1000));
-    totaleuFlowOk = (fuelvalue / 1000) * optimalFlow * efficienty / 100;
+    totaleuFlowOk = Math.floor((fuelvalue / 1000) * optimalFlow * efficienty / 100);
 
     totalFlow = Math.round(optimalFlow * 1.25);
     EuStart = totalFlow * (fuelvalue / 1000);
     eff = 1 - Math.abs((totalFlow - optimalFlow) / optimalFlow);
     totaleuFlowNotOk = (EuStart * eff) * efficienty / 100; 
 
-    document.getElementById('FlowOk').innerHTML = "Регулируемый поток (" + optimalFlow + "L/t): " + Math.round(totaleuFlowOk) + " EU/t";
+    document.getElementById('FlowOk').innerHTML = "Регулируемый поток (" + optimalFlow + "L/t): " + totaleuFlowOk + " EU/t";
     document.getElementById('FlowNotOk').innerHTML = "Нерегулируемый поток: " + Math.round(totaleuFlowNotOk) + " EU/t";
   }
 }
