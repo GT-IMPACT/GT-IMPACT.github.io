@@ -480,12 +480,12 @@ function primitiveWater() {
   biomewater  = document.getElementById('biomewater').value;
   tierwater  = document.getElementById('tierwater').value;
   if(biomewater == "Биом"){
-    document.getElementById('totalwater').innerHTML = "Не выбран Biome";
+    document.getElementById('totalwater').innerHTML = "Biome missing";
   } else if(tierwater == "Хэтч"){
-    document.getElementById('totalwater').innerHTML = "Не выбран Output Hatch";
+    document.getElementById('totalwater').innerHTML = "Output Hatch missing";
   } else {
     totalwater = biomewater * tierwater;
-    document.getElementById('totalwater').innerHTML = "Ответ: "+ totalwater + " L/s";
+    document.getElementById('totalwater').innerHTML = ""+ totalwater + " L/s";
   }
 }
 
@@ -493,12 +493,12 @@ function elWater() {
   biomewater  = document.getElementById('biomewater').value;
   tierwater  = document.getElementById('tierwater').value;
   if(biomewater == "Биом"){
-    document.getElementById('totalwater').innerHTML = "Не выбран Biome";
+    document.getElementById('totalwater').innerHTML = "Biome missing";
   } else if(tierwater == "Хэтч"){
-    document.getElementById('totalwater').innerHTML = "Не выбран Hatch";
+    document.getElementById('totalwater').innerHTML = "Hatch missing";
   } else {
     totalwater = (1 << tierwater - 1) * 2 * biomewater;
-    document.getElementById('totalwater').innerHTML = "Ответ: "+ totalwater + " L/s";
+    document.getElementById('totalwater').innerHTML = "" + totalwater + " L/s";
   }
 }
 
@@ -506,10 +506,10 @@ function steamLargeTurbine() {
   flow = document.getElementById('flow').value;
   efficienty = document.getElementById('efficienty').value;
   if(flow == ""){
-    document.getElementById('FlowOk').innerHTML = "Отсутсвует Optimal Flow";
+    document.getElementById('FlowOk').innerHTML = "Optimal Flow missing";
     document.getElementById('FlowNotOk').innerHTML = "";
   } else if(efficienty == ""){
-    document.getElementById('FlowOk').innerHTML = "Отсутсвует Efficiency";
+    document.getElementById('FlowOk').innerHTML = "Efficiency missing";
     document.getElementById('FlowNotOk').innerHTML = "";
   } else {
     totaleuFlowOk = (flow/20)*0.5*(efficienty/100);
@@ -517,8 +517,8 @@ function steamLargeTurbine() {
     x2 = x1 * (flow/20*1.25);
   
     totaleuFlowNotOk = Math.max(1, x2 * efficienty / 200); 
-    document.getElementById('FlowOk').innerHTML = "Регулируемый поток: "+ Math.round(totaleuFlowOk) + " EU/t";
-    document.getElementById('FlowNotOk').innerHTML = "Нерегулируемый поток: " + Math.round(totaleuFlowNotOk) + " EU/t";
+    document.getElementById('FlowOk').innerHTML = "Regulated flow: "+ Math.round(totaleuFlowOk) + " EU/t";
+    document.getElementById('FlowNotOk').innerHTML = "Unregulated flow: " + Math.round(totaleuFlowNotOk) + " EU/t";
   }
 }
 
@@ -526,14 +526,14 @@ function gasLargeTurbine() {
   flow = document.getElementById('flow').value;
   efficienty = document.getElementById('efficienty').value;
   fuelvalue = document.getElementById('fuelvalue').value;
-  if(flow == ""){
-    document.getElementById('FlowOk').innerHTML = "Отсутсвует Optimal Flow";
+  if(flow == "") {
+    document.getElementById('FlowOk').innerHTML = "Optimal Flow missing";
     document.getElementById('FlowNotOk').innerHTML = "";
-  } else if(efficienty == ""){
-    document.getElementById('FlowOk').innerHTML = "Отсутсвует Efficiency";
+  } else if(efficienty == "") {
+    document.getElementById('FlowOk').innerHTML = "Efficiency missing";
     document.getElementById('FlowNotOk').innerHTML = "";
-  } else if(fuelvalue == ""){
-    document.getElementById('FlowOk').innerHTML = "Отсутсвует Fuel Value";
+  } else if(fuelvalue == "") {
+    document.getElementById('FlowOk').innerHTML = "Fuel Value missing";
     document.getElementById('FlowNotOk').innerHTML = "";
   } else {
     
@@ -545,7 +545,7 @@ function gasLargeTurbine() {
     eff = 1 - Math.abs((totalFlow - optimalFlow) / optimalFlow);
     totaleuFlowNotOk = (EuStart * eff) * efficienty / 100; 
 
-    document.getElementById('FlowOk').innerHTML = "Регулируемый поток (" + optimalFlow + "L/t): " + totaleuFlowOk + " EU/t";
-    document.getElementById('FlowNotOk').innerHTML = "Нерегулируемый поток: " + Math.round(totaleuFlowNotOk) + " EU/t";
+    document.getElementById('FlowOk').innerHTML = "Regulated flow (" + optimalFlow + "L/t): " + totaleuFlowOk + " EU/t";
+    document.getElementById('FlowNotOk').innerHTML = "Unregulated flow: " + Math.round(totaleuFlowNotOk) + " EU/t";
   }
 }

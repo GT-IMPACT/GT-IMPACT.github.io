@@ -50,12 +50,12 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a href="../home">Главная</a></li>
-                        <li><a href="../about">О модпаке</a></li>
-                        <li><a href="../download">Скачать</a></li>
+                        <li><a href="../home">Home</a></li>
+                        <li><a href="../about">About us</a></li>
+                        <li><a href="../download">Download</a></li>
                         <li class="menu-has-children"><a class="active" href="">Wiki</a>
                             <ul>
-                                <li><a href="gt-addons">GregTech и аддоны</a></li>
+                                <li><a class="active">GregTech and Addons</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -72,13 +72,11 @@
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <h1 class="p-black">Electric Water Drilling Rig</h1>
-                    <h4 class="p-black">Электрическая буровая водокачка</h4>
                     <hr>
                     <div class="tab-wiki menu" style="float: left;">
-                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Описание
-                        </button>
-                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Механика работы</button>
-                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Постройка</button>
+                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Description</button>
+                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Uses/Functions</button>
+                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Construction</button>
                     </div>
                 </div>
             </div>
@@ -90,17 +88,12 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Электрическая буровая водокачка - это многоблочная машина, добавленная модификацией Impact
-                        Core.</br>
-                        <hr>
-                        Предназначена для выкачивания воды из бедрока с помощью электричества.
-
-
+                        Designed for pumping water from the bedrock using electricity.
                     </div>
                     <div id="content-right">
 
                         <img class="img-fluid" src="../../img/wiki/ElWater.png" style="transform: scale(-1, 1)">
-                        <p>Electric Water Drilling Rig в собранной форме</p>
+                        <p>Electric Water Drilling Rig finished structure</p>
 
                     </div>
                 </div>
@@ -113,18 +106,18 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Машина выкачивает воду из бедрока с помощью электричества, в зависимости от биома в котором
-                        находится контролер, тира Energy Hatch и Output Hatch.
+                        The machine pumps out water from the bedrock using electricity, depending on the biome in which
+                        the controller is located, and Energy Hatch and Output Hatch range.
                         <hr>
 
-                        <p style="font-weight: bold; margin-bottom: -5px">Коэффициент генерации воды:</p><br>
-                        Коэффициент генерации воды - h.
-                        Коэффициент изменяется с помощью тира Energy Hatch и Output Hatch.<br>
+                        <p style="font-weight: bold; margin-bottom: -5px">Water generation coefficient:</p><br>
+                        Water generation coefficient - h.
+                        The coefficient is changed using the Energy Hatch and Output Hatch range.<br>
 
                         <br>
-                        <p style="font-weight: bold; margin-bottom: -5px">Биомный коэффициент:</p><br>
-                        Биомный коэффициент - b.
-                        Коэффициент изменяется с помощью биома, в котором находится контролер:
+                        <p style="font-weight: bold; margin-bottom: -5px">Biome Coefficient:</p><br>
+                        Biome coefficient - b.
+                        The coefficient is changed using the biome in which the controller is located:
                         <li>Ocean, River: b = 1000 L/s</li>
                         <li>Swamplant: b = 800 L/s</li>
                         <li>Jungle: b = 350 L/s</li>
@@ -132,27 +125,19 @@
                         <li>Plains, Forest: b = 250 L/s</li>
                         <li>Taiga: b = 175 L/s</li>
                         <li>Beach: b = 170 L/s</li>
-                        <li>Остальные: b = 100 L/s</li>
+                        <li>Other: b = 100 L/s</li>
 
                         <br>
-                        <p style="font-weight: bold; margin-bottom: -5px">Генерации воды:</p><br>
-                        Вода генерируется при двух показателях (коэффициентах) по следующей формуле:<br>
-                        Генерация воды (L/s) = (1 * 2 ^ h) * 2 * b
-
+                        <p style="font-weight: bold; margin-bottom: -5px">Water generation:</p><br>
+                        Water is generated at two coefficients according to the following formula:<br>
+                        Water generation (L/s) = (1 * 2 ^ h) * 2 * b
                     </div>
                     <div id="content-right">
-                        <p style="padding-top: 10px; padding-bottom: 8px">
-                            <b style="color: black;">Пример генерации воды</b>
-                        </p>
-                        <p style="text-align: justify;">
-                            В биоме Plains c HV Energy Hatch генерация воды будет равна:<br>
-                            <em>Генерация воды = (1 * 2 ^ 3) * 2 * 250 = 2000 L/s.</em>
-                        </p>
                         <p style="padding-top: 10px; padding-bottom: 8px;">
-                            <b style="color: black;">Калькулятор генерации воды</b><br>
+                            <b style="color: black;">Water Generation Calculator</b><br>
                         </p>
                         <select id="biomewater" style="width: 100%; margin-bottom: 8px;" type="text">
-                            <option disabled selected value="Биом">Выберите Biome</option>
+                            <option disabled selected value="Биом">Select Biome</option>
                             <option value="1000">Ocean, River</option>
                             <option value="175">Taiga</option>
                             <option value="350">Jungle</option>
@@ -160,12 +145,12 @@
                             <option value="300">Snow, Iceland</option>
                             <option value="170">Beach</option>
                             <option value="250">Plains, Forest</option>
-                            <option value="100">Другие</option>
+                            <option value="100">Other</option>
                         </select>
 
 
                         <select id="tierwater" style="width: 100%; margin-bottom: 8px;" type="text">
-                            <option disabled selected value="Хэтч">Выберите Output/Energy Hatch</option>
+                            <option disabled selected value="Хэтч">Select Output/Energy Hatch</option>
                             <option value="1">LV Output/Energy Hatch</option>
                             <option value="2">MV Output/Energy Hatch</option>
                             <option value="3">HV Output/Energy Hatch</option>
@@ -176,7 +161,7 @@
                             <option value="8">UV Output/Energy Hatch</option>
                             <option value="9">UHV Output/Energy Hatch</option>
                         </select>
-                        <button onclick="elWater()" style="margin-top: 10px;">Рассчитать</button>
+                        <button onclick="elWater()" style="margin-top: 10px;">Calculate</button>
                         <p id="totalwater"></p>
                     </div>
                 </div>
@@ -190,22 +175,23 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Для постройки этого мультиблока вам понадобятся 2 типа блоков: Solid Steel Machine Casing и
-                        Steel Frame Box.</br>
+                        To build this multiblock you will need blocks: Solid Steel Machine Casing и
+                        Steel Frame Box.<br>
                         <hr>
                         <li>Energy Hatch: 1x</li>
                         <li>Maintenance Hatch: 1x</li>
                         <li>Output Hatch: 1x</li>
-                        Остальные люки обслуживания не требуются.
+                        The rest of the service hatches are not required.
+
+                        <p>
+                            To enable the hologram (hint when building), use the Multiblock Machine Blueprint
+                            from the TecTech mod, click it on the multiblock controller.
+                        </p>
                         <hr>
+                        <p style="font-weight: bold; margin-bottom: -5px">Important!</p>
+                        <p>Energy Hatch and Output Hatch must have the same tier.</p>
 
-                        <p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint
-                            из мода TecTech, кликните им по контролеру мультиблока.</p>
-
-                        <p style="font-weight: bold; margin-bottom: -5px">Важно!</p>
-                        <p>В структуре Energy Hatch и Output Hatch должны быть одного тира.</p>
-
-                        Не забудьте положить Mining pipe в слот контролера, либо в дополнительный Input Bus.
+                        *Do not forget to put the Mining pipe in the controller slot, or in the additional Input Bus.
 
 
                     </div>

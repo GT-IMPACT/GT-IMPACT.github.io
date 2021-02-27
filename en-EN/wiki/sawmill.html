@@ -50,12 +50,12 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a href="../home">Главная</a></li>
-                        <li><a href="../about">О модпаке</a></li>
-                        <li><a href="../download">Скачать</a></li>
+                        <li><a href="../home">Home</a></li>
+                        <li><a href="../about">About us</a></li>
+                        <li><a href="../download">Download</a></li>
                         <li class="menu-has-children"><a class="active" href="">Wiki</a>
                             <ul>
-                                <li><a href="gt-addons">GregTech и аддоны</a></li>
+                                <li><a class="active">GregTech and Addons</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -72,13 +72,11 @@
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <h1 class="p-black">Saw Mill</h1>
-                    <h4 class="p-black">Лесопилка</h4>
                     <hr>
                     <div class="tab-wiki menu" style="float: left;">
-                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Описание
-                        </button>
-                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Механика работы</button>
-                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Постройка</button>
+                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Description</button>
+                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Uses/Functions</button>
+                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Construction</button>
                     </div>
                 </div>
             </div>
@@ -90,17 +88,13 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Лесопилка - это многоблочная машина, добавленная модификацией Impact Core.</br>
-                        <hr>
-                        Предназначена для обработки древесины, так как все остальные механики обработки дерева отключены
-                        (кроме ручного инструмента), вам понадобится эта машина для игрового процессинга.
-
-
+                        Designed for woodworking, since all other woodworking mechanics are disabled
+                        (except hand tools), you will need this machine for processing.
                     </div>
                     <div id="content-right">
 
                         <img class="img-fluid" src="../../img/wiki/sawmill.png">
-                        <p>Saw Mill в собранной форме</p>
+                        <p>Saw Mill finished structure</p>
 
                     </div>
                 </div>
@@ -113,41 +107,39 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Машина имеет 3 режима работы. Режимы переключаются с помощью Screwdriver (Отвертка).
+                        The machine has 3 operating modes. Modes are switched using Screwdriver.
                         <br>
                         <hr>
-                        <p style="font-weight: bold; margin-bottom: -5px">Режим 1. Planks & Sawdust (Доски и
-                            Опилки):</p>
+                        <p style="font-weight: bold; margin-bottom: -5px">Mode 1. Planks & Sawdust:</p>
                         <br>
-                        Данный режим позволяет из бревен получать доски и опилки, если у вас Output Bus ULV тира, вы
-                        получите на выходе только доски.
+                        This mode allows you to get boards and sawdust from logs, if you have an Output Bus ULV
+                        of the shooting range, you will only get boards at the output.
                         <br><br>
-                        <p style="font-weight: bold; margin-bottom: -5px">Режим 2. Wood Pulp & Sawdust (Древесная масса
-                            и Опилки):</p>
+                        <p style="font-weight: bold; margin-bottom: -5px">Mode 2. Wood Pulp & Sawdust:</p>
                         <br>
-                        Данный режим позволяет из бревен с водой получать древесная массу и опилки, если у вас Output
-                        Bus ULV тира, вы получите на выходе только древесную массу.
+                        This mode allows you to get wood pulp and sawdust from logs with water, if you
+                        have an Output Bus ULV of the range, you will only get wood pulp at the output.
                         <br><br>
-                        <p style="font-weight: bold; margin-bottom: -5px">Режим 3. Only Sawdust (Только Опилки):</p>
+                        <p style="font-weight: bold; margin-bottom: -5px">Mode 3. Only Sawdust:</p>
                         <br>
-                        Данный режим позволяет из бревен получать только опилки.
+                        This mode allows you to get only sawdust from the logs.
                     </div>
                     <div id="content-right">
 
                         <img class="img-fluid" src="../../img/wiki/sm1.png"
                              style=" box-shadow: 0 0 8px 0px rgba(0,0,0,.6);">
 
-                        <p style="padding-top: 10px; padding-bottom: 8px">Режим Planks & Sawdust</p>
+                        <p style="padding-top: 10px; padding-bottom: 8px">Mode Planks & Sawdust</p>
 
                         <img class="img-fluid" src="../../img/wiki/sm2.png"
                              style=" box-shadow: 0 0 8px 0px rgba(0,0,0,.6);">
 
-                        <p style="padding-top: 10px; padding-bottom: 8px">Режим Wood Pulp & Sawdust</p>
+                        <p style="padding-top: 10px; padding-bottom: 8px">Mode Wood Pulp & Sawdust</p>
 
                         <img class="img-fluid" src="../../img/wiki/sm3.png"
                              style=" box-shadow: 0 0 8px 0px rgba(0,0,0,.6);">
 
-                        <p style="padding-top: 10px; padding-bottom: 8px">Режим Only Sawdust</p>
+                        <p style="padding-top: 10px; padding-bottom: 8px">Mode Only Sawdust</p>
                     </div>
                 </div>
             </div>
@@ -160,21 +152,18 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Для постройки этого мультиблока вам понадобятся 2 типа блоков: Saw Mill Conveyor и Wooden
-                        Casing.</br>
+                        To build this multiblock you will need blocks: Saw Mill Conveyor и Wooden Casing.</br>
                         <hr>
-                        Люки обслуживания (устанавливаются в любом месте вместо Wooden Casing):
-                        <li>Energy hatch: 1x (Overclock - ускорение машины происходит только с MV тира)</li>
-                        <li>Output Bus: до 1x</li>
-                        <li>Input Hatches: до 1x</li>
+                        <li>Energy hatch: 1x</li>
+                        <li>Output Bus: 1x</li>
+                        <li>Input Hatches: 1x</li>
                         <li>Input Bus: 1x</li>
-                        Остальные люки обслуживания не требуются.
+                        The rest of the service hatches are not required.
                         <hr>
-
-                        <p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint
-                            из мода TecTech, кликните им по контролеру мультиблока.</p>
-
-
+                        <p>
+                            To enable the hologram (hint when building), use the Multiblock Machine Blueprint
+                            from the TecTech mod, click it on the multiblock controller.
+                        </p>
                     </div>
                     <div id="content-right">
 

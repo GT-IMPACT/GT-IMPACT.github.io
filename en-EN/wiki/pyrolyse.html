@@ -50,12 +50,12 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a href="../home">Главная</a></li>
-                        <li><a href="../about">О модпаке</a></li>
-                        <li><a href="../download">Скачать</a></li>
+                        <li><a href="../home">Home</a></li>
+                        <li><a href="../about">About us</a></li>
+                        <li><a href="../download">Download</a></li>
                         <li class="menu-has-children"><a class="active" href="">Wiki</a>
                             <ul>
-                                <li><a href="gt-addons">GregTech и аддоны</a></li>
+                                <li><a class="active">GregTech and Addons</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -72,13 +72,11 @@
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <h1 class="p-black">Pyrolyse Oven</h1>
-                    <h4 class="p-black">Пиролизная печь</h4>
                     <hr>
                     <div class="tab-wiki menu" style="float: left;">
-                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Описание
-                        </button>
-                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Механика работы</button>
-                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Постройка</button>
+                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Description</button>
+                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Uses/Functions</button>
+                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Construction</button>
                     </div>
                 </div>
             </div>
@@ -90,17 +88,13 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Пиролизная печь - это многоблочная машина, добавленная модификацией Impact Core.</br>
-                        <hr>
-                        Принцип работы пиролизной печи основан на термическом разложении органических веществ на
-                        пиролизные газы и твердые остатки.
-
-
+                        The principle of operation of a pyrolysis oven is based on the thermal decomposition of organic
+                        substances into pyrolysis gases and solid residues.
                     </div>
                     <div id="content-right">
 
                         <img class="img-fluid" src="../../img/wiki/purolyse.png">
-                        <p>Pyrolyse Oven в собранной форме</p>
+                        <p>Pyrolyse Oven finished structure</p>
 
                     </div>
                 </div>
@@ -113,17 +107,17 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Машина имеет уникальную механику - выход продуктов во время работы.
+                        The machine has a unique mechanics - product output during operation.
                         <br>
                         <hr>
-                        <p style="font-weight: bold; margin-bottom: -5px">Принцип работы:</p>
+                        <p style="font-weight: bold; margin-bottom: -5px">Principle of operation:</p>
                         <br>
-                        Во время ("Time", см. рисунок) выполнения рецепта происходит выход газов и твердого топлива:
-                        <li>На 7 секунде - Carbon Monoxide (72L)</li>
-                        <li>На 14 секунде - Hydrogen Gas (288L)</li>
-                        <li>На 21 секунде - Methane Gas (144L)</li>
-                        <li>На 28 секунде - CO2 Gas (216L)</li>
-                        <li>На 35 секунде - Wood Tar (1440L) и Charcoal (5)</li>
+                        During ("Time", see the picture) of the recipe, gases and solid fuels are released:
+                        <li> At 7 seconds - Carbon Monoxide (72L) </li>
+                        <li> At 14 seconds - Hydrogen Gas (288L) </li>
+                        <li> At 21 seconds - Methane Gas (144L) </li>
+                        <li> At 28 seconds - CO2 Gas (216L) </li>
+                        <li> At 35 seconds - Wood Tar (1440L) and Charcoal (5) </li>
 
                     </div>
                     <div id="content-right">
@@ -131,7 +125,7 @@
                         <img class="img-fluid" src="../../img/wiki/pyroRecipeNew.png"
                              style=" box-shadow: 0 0 8px 0px rgba(0,0,0,.6);">
 
-                        <p style="padding-top: 10px; padding-bottom: 8px">Пиролиз опилок</p>
+                        <p style="padding-top: 10px; padding-bottom: 8px">Sawdust pyrolysis</p>
 
                     </div>
                 </div>
@@ -145,28 +139,30 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Для постройки этого мультиблока вам понадобятся 3 типа блоков: Solid Steel Machine Casing, Steel
+                        To build this multiblock you will need blocks: Solid Steel Machine Casing, Steel
                         Pipe Casing и Steel Frame Box.</br>
                         <hr>
-                        Люки обслуживания (устанавливаются в любом месте вместо Solid Steel Machine Casing):
+                        Service hatches (installed anywhere instead of Solid Steel Machine Casing):
                         <li>LV Energy Hatch: 1x</li>
                         <li>Maintenance Hatch: 1x</li>
                         <li>Muffler Hatch: 1x</li>
                         <li>Output Bus: до 1x</li>
                         <li>Output Hatch: до 1x</li>
                         <li>Input Bus: 1x</li>
-                        Остальные люки обслуживания не требуются.
+                        The rest of the service hatches are not required.
                         <hr>
+                        <p>
+                            To enable the hologram (hint when building), use the Multiblock Machine Blueprint
+                            from the TecTech mod, click it on the multiblock controller.
+                        </p>
 
-                        <p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint
-                            из мода TecTech, кликните им по контролеру мультиблока.</p>
-
-
-                        <p style="font-weight: bold; margin-bottom: -5px">Важно!</p>
-                        <p>Так так в структуре возможна установка только одного Output Hatch, возникает вопрос как
-                            выводить все жидкости (5 видов) из одного хэтча. Рекомендуется использовать многожильные
-                            трубы (Nonuple Fluid Pipe).</p>
-                        <p>Пиролизная печь не ускоряется, менять Energy Hatch не имеет смысла.</p>
+                        <p style="font-weight: bold; margin-bottom: -5px">Important!</p>
+                        <p>
+                            Since it is possible to install only one Output Hatch in the structure, the question arises
+                            of how to output all fluids (5 types) from one hatch. It is recommended to use multi-pipes
+                            (Nonuple Fluid Pipe).
+                        </p>
+                        <p>The pyrolysis oven does not accelerate, it makes no sense to change the Energy Hatch.</p>
                     </div>
                     <div id="content-right">
 

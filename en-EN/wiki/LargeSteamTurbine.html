@@ -50,13 +50,12 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a href="../home">Главная</a></li>
-                        <li><a href="../about">О модпаке</a></li>
-                        <li><a href="../download">Скачать</a></li>
+                        <li><a href="../home">Home</a></li>
+                        <li><a href="../about">About us</a></li>
+                        <li><a href="../download">Download</a></li>
                         <li class="menu-has-children"><a class="active" href="">Wiki</a>
                             <ul>
-                                <li><a href="gt-addons">GregTech и аддоны</a></li>
-                                <li><a data-tooltip="В разработке">Другие моды</a></li>
+                                <li><a class="active">GregTech and Addons</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,13 +72,11 @@
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <h1 class="p-black">Large Steam Turbine</h1>
-                    <h4 class="p-black">Большая паровая турбина</h4>
                     <hr>
                     <div class="tab-wiki menu" style="float: left;">
-                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Описание
-                        </button>
-                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Механика работы</button>
-                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Постройка</button>
+                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Description</button>
+                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Uses/Functions</button>
+                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Construction</button>
                     </div>
                 </div>
             </div>
@@ -91,23 +88,16 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Большая паровая турбина - это многоблочная машина-генератор, добавленная модификацией
-                        GregTech.</br>
-                        <hr>
-                        Турбина способна выработывать энергию, тратя при этом пар. Медленно разгоняется, используется
-                        для продолжительной выработки энергии.
-
-                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">
-                            Важно!</p>
-                        Изменена механика работы по сравнению с официальной версией GregTech, внимательно прочитайте
-                        представленую информацию.
-
-
+                        he turbine is capable of generating energy, using steam.
+                        Accelerates slowly, used for continuous energy production.
+                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Important!</p>
+                        The mechanics of work have been changed compared to the official
+                        version of GregTech, please read the information provided carefully.
                     </div>
                     <div id="content-right">
 
                         <img class="img-fluid" src="../../img/wiki/SteamLargeTrubine.png">
-                        <p>Large Steam Turbine в собранной форме</p>
+                        <p>Large Steam Turbine finished structure</p>
 
                     </div>
                 </div>
@@ -120,61 +110,53 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Большая Паровая Турбина работает на пару GregTech и/или на пару из IndustrialCraft 2, выводя при
-                        этом дистилированную воду вдобавок к энергии.
+                        The Large Steam Turbine is powered by steam from GregTech and / or steam
+                        from IndustrialCraft 2, producing distilled water in addition to energy.
                         <hr>
+                        The turbine requires a rotor to operate. There are many options available,
+                        differing in size, material, work efficiency and optimal flow modifier.
+                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Important!</p>
+                        The rotor is disposable, that is, you insert it into the interface of the turbine controller,
+                        the turbine remembers the characteristics and remove the rotor, the characteristics are retained
+                        until you break the controller.
 
-                        Турбине требуется ротор для работы. Есть множество их вариантов, различающихся по размеру,
-                        материалу, эффективности работы и модификатору оптимальной подачи.
-                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">
-                            Важно!</p>
-                        Ротор является одноразовым, то есть вы вставляете его в интерфейс контролера турбины, турбина
-                        запоминает характеристики и удаляет ротор, характеристики сохраняются до тех пор, пока вы не
-                        сломаете контролер.
+                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Efficiency:</p>
+                        Efficiency - percentage influencing turbine energy output.<br>
 
-                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">
-                            Эффективность:</p>
-                        Efficiency (Эффективность) - процентное отношение, влияющее на энергетический выход турбины.
+                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Optimal flow:</p>
+                        Optimal Flow is the size of the flow required to achieve the optimal
+                        energy efficiency of the turbine. Each rotor has an individual optimal flow value.
 
-                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">
-                            Оптимальная подача:</p>
-                        Optimal Flow (Оптимальная подача) - это размер потока, необходимый для достижения оптимального
-                        энергетического выхода турбины. У каждого ротора есть индивидуальное значение оптимального
-                        потока.
+                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Fuel Value:</p>
 
-                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">
-                            Энергоплотность пара:</p>
+                        Fuel Value of steam = 0.5 EU/L
 
-                        Fuel Value (Энергоплотность) пара = 0.5 EU/L
-
-                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">
-                            Генерация энергии:</p>
-                        Генерация энергии выполняется по формуле: <br>
+                        <p style="font-weight: bold; margin-bottom: -5px; padding-top: 10px; padding-bottom: 5px;">Power generation:</p>
+                        nergy generation is performed according to the formula: <br>
                         <b>EU/t = (Optimal Flow / 20) * Fuel Values * (Efficiency / 100)</b>
 
                     </div>
                     <div id="content-right">
                         <p style="padding-top: 10px; padding-bottom: 8px">
-                            <b style="color: black;">Пример генерации энергии из пара</b>
+                            <b style="color: black;">An example of generating energy from steam</b>
                         </p>
 
-
                         <p style="text-align: justify;">
-                            Большой Ротор из материала Carbon с эффективностью - 120, с оптимальным потоком - 3000
-                            L/s.<br>
+                            Large Rotor made of Carbon with an efficiency of 120, with an optimal flow of
+                            3000 L/s.<br>
                             <br>
-                            Генерация энергии:<br>
+                            Power generation:<br>
                             <em>EU/t = (3000 / 20) * 0.5 * (120 / 100) = 90 EU/t.</em>
                         </p>
                         <p style="padding-top: 10px; padding-bottom: 8px;">
-                            <b style="color: black;">Калькулятор генерации энергии из пара</b><br>
+                            <b style="color: black;">Steam Power Generation Calculator</b><br>
                         </p>
                         <input id="flow" placeholder="Optimal Flow (L/s)" style="width: 100%; margin-bottom: 8px;"
                                type="text">
                         <input id="efficienty" placeholder="Efficiency" style="width: 100%; margin-bottom: 8px;"
                                type="text">
 
-                        <button onclick="steamLargeTurbine()" style="margin-top: 10px;">Рассчитать</button>
+                        <button onclick="steamLargeTurbine()" style="margin-top: 10px;">Calculate</button>
                         <p id="FlowOk" style="margin: 4px 0;"></p>
                         <p id="FlowNotOk"></p>
                     </div>
@@ -189,17 +171,19 @@
                     <div id="bg-left"></div>
                     <div id="bg-right"></div>
                     <div id="content-left">
-                        Для постройки этого мультиблока вам понадобятся блок: Turbine Casing.</br>
+                        To build this multiblock you will need blocks: Turbine Casing.<br>
                         <hr>
-                        <li>Dynamo Hatch (Сзади по центру): 1x</li>
-                        <li>Maintenance Hatch (Сбоку по центру): 1x</li>
-                        <li>Input Hatch для пара (Сбоку по центру): 1x</li>
-                        <li>Output Hatch для дистилированной воды (Сбоку по центру): 1x</li>
-                        Остальные люки обслуживания не требуются.
+                        <li>Dynamo Hatch (Back center): 1x</li>
+                        <li>Maintenance Hatch (Side center): 1x</li>
+                        <li>Input Hatch for steam (Side center): 1x</li>
+                        <li>Output Hatch for dist. water (Side center): 1x</li>
+                        The rest of the service hatches are not required.
                         <hr>
 
-                        <p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint
-                            из мода TecTech, кликните им по контролеру мультиблока.</p>
+                        <p style="padding-top: 5px">
+                            To enable the hologram (hint when building), use the Multiblock Machine Blueprint
+                            from the TecTech mod, click it on the multiblock controller.
+                        </p>
 
                     </div>
                     <div id="content-right">
@@ -219,10 +203,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <p class="footer-text">
-                <p class="p-white">
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                    | Made by 4gname
-                </p>
+                    <p class="p-white">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        | Made by 4gname
+                    </p>
                 </p>
             </div>
         </div>
