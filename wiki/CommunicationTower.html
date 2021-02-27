@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta
+            content="user-scalable=no"
+            name="viewport"
+    />
+    <!-- Favicon-->
+    <link href="../img/fav.png" rel="shortcut icon"/>
+    <!-- Author Meta -->
+    <meta content="colorlib" name="author"/>
+    <!-- Meta Description -->
+    <meta content="" name="description"/>
+    <!-- Meta Keyword -->
+    <meta content="" name="keywords"/>
+    <!-- meta character set -->
+    <meta charset="UTF-8"/>
+    <!-- Site Title -->
+    <title>Impact Wiki - Communication Tower</title>
+
+    <link
+            href="https://fonts.googleapis.com/css?family=Play:300,400,500,600,700"
+            rel="stylesheet"
+    />
+    <!--
+			CSS
+			============================================= -->
+    <link href="../css/flaticon.css" rel="stylesheet"/>
+    <link href="../css/themify-icons.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <link href="../css/magnific-popup.css" rel="stylesheet"/>
+    <link href="../css/nice-select.css" rel="stylesheet"/>
+    <link href="../css/animate.min.css" rel="stylesheet"/>
+    <link href="../css/owl.carousel.css" rel="stylesheet"/>
+    <link href="../css/main.css" rel="stylesheet"/>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<!-- Start Header Area -->
+<header id="header">
+    <div class="header-inner">
+        <div class="container main-menu">
+            <div class="row align-items-center d-flex">
+                <div id="logo">
+                    <a href="../index"><img alt="" src="../img/logo.png" title=""/></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a href="../index">Главная</a></li>
+                        <li><a href="../about">О модпаке</a></li>
+                        <li><a href="../download">Скачать</a></li>
+                        <li class="menu-has-children"><a class="active" href="">Wiki</a>
+                            <ul>
+                                <li><a href="gt-addons">GregTech и аддоны</a></li>
+                                <li><a data-tooltip="В разработке">Другие моды</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header Area -->
+<!-- Start Service Area -->
+<section class="service-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h1 class="p-black">Communication Tower</h1>
+                    <h4 class="p-black">Коммуникационная Вышка</h4>
+                    <hr>
+                    <div class="tab-wiki menu" style="float: left;">
+                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Описание
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Механика работы</button>
+                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Постройка</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabcontent-wiki2" id="Description">
+            <div class="row wiki">
+
+                <div id="wiki-content">
+                    <div id="bg-left"></div>
+                    <div id="bg-right"></div>
+                    <div id="content-left">
+                        Коммуникационная Вышка позволяет настроить беспроводную связь
+                        между спутником на орбите и механизмами на земле.
+                    </div>
+                    <div id="content-right">
+                        <img class="img-fluid" src="../img/wiki/ParTower.png">
+                        <p>Коммуникационная Вышка<br>(свободная структура)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent-wiki2" id="Mechanics">
+            <div class="row wiki">
+                <div id="wiki-content">
+                    <div id="bg-left"></div>
+                    <div id="bg-right"></div>
+                    <div id="content-left">
+                        Для работы с вышкой, вам нужно подготовится:
+                        <br>    - Установка <a href="SpaceSatellite">Космического Спутника</a>
+                        <hr>
+                        <p style="font-weight: bold; margin-bottom: -5px">Принцип работы:</p>
+                        <p style="padding-top: 10px">
+                            После установки Космического Спутника вы должны настроить частоту
+                            с помощью Ноутбука (Laptop).
+                        </p>
+                        <p style="padding-top: 10px">
+                            Для настройки подключения используется Коммуникационный Приемник (Communication Receiver).
+                            Частота должна совпадать с частотой спутника. Для установки связи нужно поключить все 4 приемника.
+                        </p>
+
+                        <p style="font-weight: bold; margin-bottom: -5px">Важно!</p>
+                        <p style="padding-top: 10px">
+                            У вышки есть радиус работы - 256 блоков, считается от контролера.<br>
+                            Несколько вышек могут быть подключены на одну частоту - частоту спутника.<br>
+                            Вышка не требует электрического питания.
+                        </p>
+                    </div>
+                    <div id="content-right">
+                        <img class="img-fluid" src="../img/wiki/connectTowerSattelite.gif" style=" box-shadow: 0 0 8px 0px rgba(0,0,0,.6);">
+                        <p style="padding-top: 10px; padding-bottom: 8px">Настройка частоты для подключения Коммуникационной Вышки к спутнику</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent-wiki2" id="Schematics">
+            <div class="row wiki">
+
+                <div id="wiki-content">
+                    <div id="bg-left"></div>
+                    <div id="bg-right"></div>
+                    <div id="content-left">
+
+                        Для постройки этого мультиблока вам понадобятся блоки: Tower Casing.
+                        <hr>
+                        <li>Communication Receiver: 4x</li>
+                        Остальные люки обслуживания не требуются.
+                        <hr>
+                        <p style="font-weight: bold; margin-bottom: 5px">Важно!</p>
+                        Вышка имеет уникальное свойство - свободная структура.
+                        Основа и приемники вышки являются обязательными.
+
+                        <p style="padding-top: 5px">
+                            В голограмму встроена красивая модель вышки, которую можно построить.
+                            Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint
+                            из мода TecTech, кликните им по контролеру мультиблока.
+                        </p>
+
+                    </div>
+                    <div id="content-right">
+                        <!-- todo casings -->
+                        <img class="img-fluid" src="../img/wiki/TowerCasing.png" width="150">
+                        <p>Tower Casing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+</section>
+<!-- End Service Area -->
+
+<!-- start footer Area -->
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="footer-text">
+                <p class="p-white">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    | Made by 4gname
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+<!-- ####################### Start Scroll to Top Area ####################### -->
+<div id="back-top">
+    <a href="#" title="Go to Top"> <i class="ti-angle-double-up"></i> </a>
+</div>
+<!-- ####################### End Scroll to Top Area ####################### -->
+
+<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<script src="../js/easing.min.js"></script>
+<script src="../js/hoverIntent.js"></script>
+<script src="../js/superfish.min.js"></script>
+<script src="../js/mn-accordion.js"></script>
+<script src="../js/jquery.ajaxchimp.min.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/jquery.nice-select.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/mail-script.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
