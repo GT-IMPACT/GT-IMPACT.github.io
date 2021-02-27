@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta
+            content="user-scalable=no"
+            name="viewport"
+    />
+    <!-- Favicon-->
+    <link href="../../img/fav.png" rel="shortcut icon"/>
+    <!-- Author Meta -->
+    <meta content="colorlib" name="author"/>
+    <!-- Meta Description -->
+    <meta content="" name="description"/>
+    <!-- Meta Keyword -->
+    <meta content="" name="keywords"/>
+    <!-- meta character set -->
+    <meta charset="UTF-8"/>
+    <!-- Site Title -->
+    <title>Impact Wiki - Electric Water Drilling Rig</title>
+
+    <link
+            href="https://fonts.googleapis.com/css?family=Play:300,400,500,600,700"
+            rel="stylesheet"
+    />
+    <!--
+			CSS
+			============================================= -->
+    <link href="../../css/flaticon.css" rel="stylesheet"/>
+    <link href="../../css/themify-icons.css" rel="stylesheet"/>
+    <link href="../../css/bootstrap.css" rel="stylesheet"/>
+    <link href="../../css/magnific-popup.css" rel="stylesheet"/>
+    <link href="../../css/nice-select.css" rel="stylesheet"/>
+    <link href="../../css/animate.min.css" rel="stylesheet"/>
+    <link href="../../css/owl.carousel.css" rel="stylesheet"/>
+    <link href="../../css/main.css" rel="stylesheet"/>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<!-- Start Header Area -->
+<header id="header">
+    <div class="header-inner">
+        <div class="container main-menu">
+            <div class="row align-items-center d-flex">
+                <div id="logo">
+                    <a href="../home"><img alt="" src="../../img/logo.png" title=""/></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a href="../home">Главная</a></li>
+                        <li><a href="../about">О модпаке</a></li>
+                        <li><a href="../download">Скачать</a></li>
+                        <li class="menu-has-children"><a class="active" href="">Wiki</a>
+                            <ul>
+                                <li><a href="gt-addons">GregTech и аддоны</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header Area -->
+<!-- Start Service Area -->
+<section class="service-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h1 class="p-black">Electric Water Drilling Rig</h1>
+                    <h4 class="p-black">Электрическая буровая водокачка</h4>
+                    <hr>
+                    <div class="tab-wiki menu" style="float: left;">
+                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Description')">Описание
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'Mechanics')">Механика работы</button>
+                        <button class="tablinks" onclick="openCity(event, 'Schematics')">Постройка</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabcontent-wiki2" id="Description">
+            <div class="row wiki">
+
+                <div id="wiki-content">
+                    <div id="bg-left"></div>
+                    <div id="bg-right"></div>
+                    <div id="content-left">
+                        Электрическая буровая водокачка - это многоблочная машина, добавленная модификацией Impact
+                        Core.</br>
+                        <hr>
+                        Предназначена для выкачивания воды из бедрока с помощью электричества.
+
+
+                    </div>
+                    <div id="content-right">
+
+                        <img class="img-fluid" src="../../img/wiki/ElWater.png" style="transform: scale(-1, 1)">
+                        <p>Electric Water Drilling Rig в собранной форме</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent-wiki2" id="Mechanics">
+            <div class="row wiki">
+                <div id="wiki-content">
+                    <div id="bg-left"></div>
+                    <div id="bg-right"></div>
+                    <div id="content-left">
+                        Машина выкачивает воду из бедрока с помощью электричества, в зависимости от биома в котором
+                        находится контролер, тира Energy Hatch и Output Hatch.
+                        <hr>
+
+                        <p style="font-weight: bold; margin-bottom: -5px">Коэффициент генерации воды:</p><br>
+                        Коэффициент генерации воды - h.
+                        Коэффициент изменяется с помощью тира Energy Hatch и Output Hatch.<br>
+
+                        <br>
+                        <p style="font-weight: bold; margin-bottom: -5px">Биомный коэффициент:</p><br>
+                        Биомный коэффициент - b.
+                        Коэффициент изменяется с помощью биома, в котором находится контролер:
+                        <li>Ocean, River: b = 1000 L/s</li>
+                        <li>Swamplant: b = 800 L/s</li>
+                        <li>Jungle: b = 350 L/s</li>
+                        <li>Snow, Iceland: b = 300 L/s</li>
+                        <li>Plains, Forest: b = 250 L/s</li>
+                        <li>Taiga: b = 175 L/s</li>
+                        <li>Beach: b = 170 L/s</li>
+                        <li>Остальные: b = 100 L/s</li>
+
+                        <br>
+                        <p style="font-weight: bold; margin-bottom: -5px">Генерации воды:</p><br>
+                        Вода генерируется при двух показателях (коэффициентах) по следующей формуле:<br>
+                        Генерация воды (L/s) = (1 * 2 ^ h) * 2 * b
+
+                    </div>
+                    <div id="content-right">
+                        <p style="padding-top: 10px; padding-bottom: 8px">
+                            <b style="color: black;">Пример генерации воды</b>
+                        </p>
+                        <p style="text-align: justify;">
+                            В биоме Plains c HV Energy Hatch генерация воды будет равна:<br>
+                            <em>Генерация воды = (1 * 2 ^ 3) * 2 * 250 = 2000 L/s.</em>
+                        </p>
+                        <p style="padding-top: 10px; padding-bottom: 8px;">
+                            <b style="color: black;">Калькулятор генерации воды</b><br>
+                        </p>
+                        <select id="biomewater" style="width: 100%; margin-bottom: 8px;" type="text">
+                            <option disabled selected value="Биом">Выберите Biome</option>
+                            <option value="1000">Ocean, River</option>
+                            <option value="175">Taiga</option>
+                            <option value="350">Jungle</option>
+                            <option value="800">Swampland</option>
+                            <option value="300">Snow, Iceland</option>
+                            <option value="170">Beach</option>
+                            <option value="250">Plains, Forest</option>
+                            <option value="100">Другие</option>
+                        </select>
+
+
+                        <select id="tierwater" style="width: 100%; margin-bottom: 8px;" type="text">
+                            <option disabled selected value="Хэтч">Выберите Output/Energy Hatch</option>
+                            <option value="1">LV Output/Energy Hatch</option>
+                            <option value="2">MV Output/Energy Hatch</option>
+                            <option value="3">HV Output/Energy Hatch</option>
+                            <option value="4">EV Output/Energy Hatch</option>
+                            <option value="5">IV Output/Energy Hatch</option>
+                            <option value="6">LuV Output/Energy Hatch</option>
+                            <option value="7">ZPM Output/Energy Hatch</option>
+                            <option value="8">UV Output/Energy Hatch</option>
+                            <option value="9">UHV Output/Energy Hatch</option>
+                        </select>
+                        <button onclick="elWater()" style="margin-top: 10px;">Рассчитать</button>
+                        <p id="totalwater"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent-wiki2" id="Schematics">
+            <div class="row wiki">
+
+                <div id="wiki-content">
+                    <div id="bg-left"></div>
+                    <div id="bg-right"></div>
+                    <div id="content-left">
+                        Для постройки этого мультиблока вам понадобятся 2 типа блоков: Solid Steel Machine Casing и
+                        Steel Frame Box.</br>
+                        <hr>
+                        <li>Energy Hatch: 1x</li>
+                        <li>Maintenance Hatch: 1x</li>
+                        <li>Output Hatch: 1x</li>
+                        Остальные люки обслуживания не требуются.
+                        <hr>
+
+                        <p>Для включения голограммы (подсказка при постройке) используйте Multiblock Machine Blueprint
+                            из мода TecTech, кликните им по контролеру мультиблока.</p>
+
+                        <p style="font-weight: bold; margin-bottom: -5px">Важно!</p>
+                        <p>В структуре Energy Hatch и Output Hatch должны быть одного тира.</p>
+
+                        Не забудьте положить Mining pipe в слот контролера, либо в дополнительный Input Bus.
+
+
+                    </div>
+                    <div id="content-right">
+
+                        <img class="img-fluid" src="../../img/wiki/SteelSolid.png" width="150">
+                        <p>Solid Steel Machine Casing</p>
+
+                        <img class="img-fluid" src="../../img/wiki/SteelFrame.png" width="150">
+                        <p>Steel Frame Box</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Service Area -->
+
+<!-- start footer Area -->
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="footer-text">
+                <p class="p-white">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    | Made by 4gname
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+<!-- ####################### Start Scroll to Top Area ####################### -->
+<div id="back-top">
+    <a href="#" title="Go to Top"> <i class="ti-angle-double-up"></i> </a>
+</div>
+<!-- ####################### End Scroll to Top Area ####################### -->
+
+<script src="../../js/vendor/jquery-2.2.4.min.js"></script>
+<script src="../../js/vendor/bootstrap.min.js"></script>
+<script src="../../js/easing.min.js"></script>
+<script src="../../js/hoverIntent.js"></script>
+<script src="../../js/superfish.min.js"></script>
+<script src="../../js/mn-accordion.js"></script>
+<script src="../../js/jquery.ajaxchimp.min.js"></script>
+<script src="../../js/jquery.magnific-popup.min.js"></script>
+<script src="../../js/owl.carousel.min.js"></script>
+<script src="../../js/jquery.nice-select.min.js"></script>
+<script src="../../js/isotope.pkgd.min.js"></script>
+<script src="../../js/mail-script.js"></script>
+<script src="../../js/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>
